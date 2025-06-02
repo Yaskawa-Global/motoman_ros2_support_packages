@@ -7,7 +7,7 @@
     <p>ROS-Industrial support for the Motoman GP25 (and variants).</p>
     <p>
       This package contains configuration data, 3D models and launch files
-      for Motoman GP25 and GP25-12 manipulators.
+      for Motoman GP25, GP25-12 and GP25-20 manipulators.
     </p>
     <p>
       <b>Specifications</b>
@@ -15,12 +15,15 @@
     <ul>
       <li>GP25 - Default</li>
       <li>GP25-12 - Variant</li>
+      <li>GP25-20 - Variant</li>
     </ul>
     <p>
       Joint limits and maximum joint velocities are based on the information 
       found in <em>YASKAWA MOTOMAN-GP25 INSTRUCTIONS (HW1485496)</em> version
       <em>185194-1CD, rev 0</em> and in the <em>YASKAWA MOTOMAN-GP25-12 INSTRUCTIONS 
-      (HW1484890)</em> version <em>181846-1CD, rev 0</em>.
+      (HW1484890)</em> version <em>181846-1CD, rev 0</em>. For the GP25-20, 
+      the information is based on the GP20_2D drawing found on the Yaskawa Europe site:
+      https://www.yaskawa.eu.com/robotics/robots/handling-mounting/productdetail/product/gp20_17184
       All urdfs are based on the default motion and joint velocity limits, 
       unless noted otherwise.
     </p>
