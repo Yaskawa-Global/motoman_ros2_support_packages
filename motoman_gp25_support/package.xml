@@ -19,11 +19,11 @@
     </ul>
     <p>
       Joint limits and maximum joint velocities are based on the information 
-      found in <em>YASKAWA MOTOMAN-GP25 INSTRUCTIONS (HW1485496)</em> version
-      <em>185194-1CD, rev 0</em> and in the <em>YASKAWA MOTOMAN-GP25-12 INSTRUCTIONS 
-      (HW1484890)</em> version <em>181846-1CD, rev 0</em>. For the GP25-20, 
-      the information is based on the GP20_2D drawing found on the Yaskawa Europe site:
-      https://www.yaskawa.eu.com/robotics/robots/handling-mounting/productdetail/product/gp20_17184
+      found in <em>YASKAWA MOTOMAN-GP25 INSTRUCTIONS (HW1485496)</em> manual
+      <em>185194-1CD, rev 0</em>, in the <em>YASKAWA MOTOMAN-GP25-12 INSTRUCTIONS 
+      (HW1484890)</em> manual <em>181846-1CD, rev 0</em>, and in the 
+	  <em>YASKAWA MOTOMAN-GP20 Operating and maintenance instructions</em> manual 
+	  <em>E1101000444GB10, rev 10</em> (from Yaskawa Europe).
       All urdfs are based on the default motion and joint velocity limits, 
       unless noted otherwise.
     </p>
