@@ -13,14 +13,14 @@
       <b>Specifications</b>
     </p>
     <ul>
-      <li>GP25 - Default</li>
-      <li>GP25-12 - Variant</li>
-      <li>GP25-20 - Variant</li>
+      <li>GP25 - Default (YR-1-06VXH25-A0*)</li>
+      <li>GP25-12 - Variant (YR-1-06VXH25-A1*)</li>
+      <li>GP25-20 - Variant (YR-1-06VX25-20-A0*)</li>
     </ul>
     <p>
       Joint limits and maximum joint velocities are based on the information 
-      found in <em>YASKAWA MOTOMAN-GP25 INSTRUCTIONS (HW1485496)</em> manual
-      <em>185194-1CD, rev 0</em>, in the <em>YASKAWA MOTOMAN-GP25-12 INSTRUCTIONS 
+      found in <em>YASKAWA MOTOMAN-GP25 INSTRUCTIONS (HW1484720)</em> manual
+      <em>180704-1CD, rev 4</em>, in the <em>YASKAWA MOTOMAN-GP25-12 INSTRUCTIONS 
       (HW1484890)</em> manual <em>181846-1CD, rev 0</em>, and in the 
 	  <em>YASKAWA MOTOMAN-GP20 Operating and maintenance instructions</em> manual 
 	  <em>E1101000444GB10, rev 10</em> (from Yaskawa Europe).
