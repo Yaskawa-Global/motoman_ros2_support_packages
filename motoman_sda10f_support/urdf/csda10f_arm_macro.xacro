@@ -94,13 +94,13 @@
     <link name="${prefix}link_7_t">
       <visual>
         <geometry>
-          <mesh filename="package://motoman_sda10f_support/meshes/sda10f/visual/link_t.stl" />
+          <mesh filename="package://motoman_sda10f_support/meshes/csda10f/visual/link_t.stl" />
         </geometry>
         <xacro:material_yaskawa_blue/>
       </visual>
       <collision>
         <geometry>
-          <mesh filename="package://motoman_sda10f_support/meshes/sda10f/collision/link_t.stl" />
+          <mesh filename="package://motoman_sda10f_support/meshes/csda10f/collision/link_t.stl" />
         </geometry>
       </collision>
     </link>
