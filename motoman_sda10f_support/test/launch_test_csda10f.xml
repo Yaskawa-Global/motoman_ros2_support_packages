@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+<launch>
+  <arg name="req_arg" value="default"/>
+  <arg name="fs100" value="fs100"/>
+
+  <group ns="load_csda10f">
+    <include file="$(find motoman_sda10f_support)/launch/load_csda10f.launch"/>
+  </group>
+
+  <group ns="test_csda10f">
+    <include file="$(find motoman_sda10f_support)/launch/test_csda10f.launch"/>
+  </group>
+
+  <group ns="robot_interface_streaming_csda10f">
+    <group ns="fs100" >
+      <include file="$(find motoman_sda10f_support)/launch/robot_interface_streaming_csda10f.launch">
+        <arg name="robot_ip"   value="$(arg req_arg)" />
+        <arg name="controller" value="$(arg fs100)"/>
+      </include>
+    </group>
+  </group>
+
+  <group ns="robot_state_visualize_csda10f">
+    <group ns="fs100" >
+      <include file="$(find motoman_sda10f_support)/launch/robot_state_visualize_csda10f.launch">
+        <arg name="robot_ip"   value="$(arg req_arg)" />
+        <arg name="controller" value="$(arg fs100)"/>
+      </include>
+    </group>
+  </group>
+</launch>
