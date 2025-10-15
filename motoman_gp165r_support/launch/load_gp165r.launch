@@ -1,3 +1,0 @@
-<launch>
-  <param name="robot_description" command="$(find xacro)/xacro '$(find motoman_gp165r_support)/urdf/gp165r.xacro'" />
-</launch>
