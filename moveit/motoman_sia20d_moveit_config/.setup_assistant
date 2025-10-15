@@ -1,9 +1,0 @@
-moveit_setup_assistant_config:
-  URDF:
-    package: motoman_sia20d_support
-    relative_path: urdf/sia20d.xacro
-    xacro_args: ""
-  SRDF:
-    relative_path: config/motoman_sia20d.srdf
-  CONFIG:
-    generated_timestamp: 1390724199
