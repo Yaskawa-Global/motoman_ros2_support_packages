@@ -1,17 +1,9 @@
-cmake_minimum_required(VERSION 3.0.2)
+cmake_minimum_required(VERSION 3.12)
 
-project(motoman_hc20_support)
+project(motoman_hc20_support NONE)
 
-find_package(catkin REQUIRED)
+find_package(ament_cmake REQUIRED)
+ament_package()
 
-catkin_package()
-
-if (CATKIN_ENABLE_TESTING)
-  find_package(roslaunch REQUIRED)
-  roslaunch_add_file_check(test/roslaunch_test_hc20.xml)
-  roslaunch_add_file_check(test/roslaunch_test_hc20dtp.xml)
-  roslaunch_add_file_check(test/roslaunch_test_hc30pl.xml)
-endif()
-
-install(DIRECTORY config launch meshes urdf
-  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION})
+install(DIRECTORY config meshes urdf
+  DESTINATION share/${PROJECT_NAME})
