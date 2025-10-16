@@ -1,9 +1,0 @@
-<launch>
-  <group ns="load_motopos_mh1655">
-    <include file="$(find motoman_motopos_mh1655_support)/launch/load_motopos_mh1655.launch"/>
-  </group>
-
-  <group ns="test_motopos_mh1655">
-    <include file="$(find motoman_motopos_mh1655_support)/launch/test_motopos_mh1655.launch"/>
-  </group>
-</launch>
