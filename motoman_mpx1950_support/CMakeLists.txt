@@ -5,5 +5,5 @@ project(motoman_mpx1950_support NONE)
 find_package(ament_cmake REQUIRED)
 ament_package()
 
-install(DIRECTORY config meshes urdf
+install(DIRECTORY config launch meshes urdf
   DESTINATION share/${PROJECT_NAME})
