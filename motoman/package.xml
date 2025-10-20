@@ -14,29 +14,47 @@
 
   <buildtool_depend>ament_cmake</buildtool_depend>
 
+  <exec_depend>motoman_ar2010_support</exec_depend>
   <exec_depend>motoman_es_support</exec_depend>
+  <exec_depend>motoman_gp110_support</exec_depend>
   <exec_depend>motoman_gp12_support</exec_depend>
+  <exec_depend>motoman_gp165r_support</exec_depend>
   <exec_depend>motoman_gp180_support</exec_depend>
+  <exec_depend>motoman_gp200r_support</exec_depend>
+  <exec_depend>motoman_gp20hl_support</exec_depend>
+  <exec_depend>motoman_gp215_support</exec_depend>
+  <exec_depend>motoman_gp225_support</exec_depend>
+  <exec_depend>motoman_gp250_support</exec_depend>
   <exec_depend>motoman_gp25_support</exec_depend>
+  <exec_depend>motoman_gp35l_support</exec_depend>
+  <exec_depend>motoman_gp4_support</exec_depend>
   <exec_depend>motoman_gp50_support</exec_depend>
+  <exec_depend>motoman_gp70l_support</exec_depend>
   <exec_depend>motoman_gp7_support</exec_depend>
-  <exec_depend>motoman_gp8_support</exec_depend>
   <exec_depend>motoman_gp88_support</exec_depend>
+  <exec_depend>motoman_gp8_support</exec_depend>
+  <exec_depend>motoman_gp8l_support</exec_depend>
   <exec_depend>motoman_hc10_support</exec_depend>
   <exec_depend>motoman_hc20_support</exec_depend>
   <exec_depend>motoman_ma2010_support</exec_depend>
+  <exec_depend>motoman_mh110_support</exec_depend>
   <exec_depend>motoman_mh12_support</exec_depend>
   <exec_depend>motoman_mh50_support</exec_depend>
   <exec_depend>motoman_mh5_support</exec_depend>
   <exec_depend>motoman_motomini_support</exec_depend>
   <exec_depend>motoman_motopos_d500_support</exec_depend>
+  <exec_depend>motoman_motopos_mh1655_support</exec_depend>
+  <exec_depend>motoman_mpx1950_support</exec_depend>
   <exec_depend>motoman_ms210_support</exec_depend>
   <exec_depend>motoman_resources</exec_depend>
   <exec_depend>motoman_sda10f_support</exec_depend>
   <exec_depend>motoman_sia10d_support</exec_depend>
   <exec_depend>motoman_sia10f_support</exec_depend>
   <exec_depend>motoman_sia20d_support</exec_depend>
+  <exec_depend>motoman_sia30d_support</exec_depend>
+  <exec_depend>motoman_sia50_support</exec_depend>
   <exec_depend>motoman_sia5d_support</exec_depend>
+  <exec_depend>motoman_up50n_support</exec_depend>
 
   <export>
     <architecture_independent/>
