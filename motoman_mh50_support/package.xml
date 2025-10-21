@@ -17,8 +17,8 @@
     </ul>
     <p>
       Joint limits and maximum joint velocities are based on the information 
-      found in the online 
-      https://www.motoman.com/hubfs/Robots/mh50.pdf
+      found <em>YASKAWA MOTOMAN-MH50 INSTRUCTIONS ()</em>
+      version <em>-1CD, rev </em>.
       All urdfs are based on the default motion and joint velocity limits, 
       unless noted otherwise.
     </p>

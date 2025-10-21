@@ -19,9 +19,8 @@
     </ul>
     <p>
       Joint limits and maximum joint velocities are based on the information 
-      found in the online documentation files for the robot (GP180-120_2D.zip
-      and GP180-120_3D.zip from
-      https://www.cz.yaskawa.eu.com/en/products/robotics/motoman-robots/productdetail/product/gp180-120/)
+      found in <em>YASKAWA MOTOMAN-GP180 INSTRUCTIONS (HW1484398)</em>
+      version <em>182739-1CD, rev 6</em>.
       All urdfs are based on the default motion and joint velocity limits, 
       unless noted otherwise.
     </p>

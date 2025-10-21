@@ -19,7 +19,20 @@
     <p>Models within each short / long variant are the same (physically and parameters).</p>
     <p>
       Maximum joint velocities are based on the information
-      found online https://www.motoman.com/en-us/products/robots/industrial/assembly-handling/mh-series/mh5ls-ii
+      found in 
+      
+      <em>MOTOMAN-MH5S / MH5F INSTRUCTIONS (HW1480683)</em>
+      version <em>160475-1CD, rev 5</em>
+      
+      <em>MOTOMAN-MH5S II INSTRUCTIONS (HW1482710)</em>
+      version <em>172401-1CD, rev 6</em>
+
+      <em>MOTOMAN-MH5LS / MH5LF INSTRUCTIONS (HW1480685)</em>
+      version <em>161052-1CD, rev 4</em>
+
+      <em>MOTOMAN-MH5LS II INSTRUCTIONS (HW1482823)</em>
+      version <em>170780-1CD, rev 3</em>
+      
       Joint limits and inertial values were provided by Motoman support and found
       under ros-industrial/motoman issue # 377. See explanation in issue.
       All urdfs are based on the default motion and joint velocity limits,
