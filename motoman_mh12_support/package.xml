@@ -35,8 +35,8 @@
   <maintainer email="g.a.vanderhoorn@tudelft.nl">G.A. vd. Hoorn (TU Delft Robotics Institute)</maintainer>
   <license>Apache-2.0</license>
 
-  <url type="bugtracker">https://github.com/ros-industrial/motoman/issues</url>
-  <url type="repository">https://github.com/ros-industrial/motoman</url>
+  <url type="bugtracker">https://github.com/yaskawa-global/motoman_ros2_support_packages/issues</url>
+  <url type="repository">https://github.com/yaskawa-global/motoman_ros2_support_packages</url>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
 
