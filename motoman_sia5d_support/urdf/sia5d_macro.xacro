@@ -183,12 +183,20 @@
     <limit lower="${-90*deg}" upper="${90*deg}" effort="0" velocity="${350*deg}" />
   </joint>
   
-  <link name="${prefix}tool0" />
-  
-  <joint name="${prefix}link_t-tool0" type="fixed" >
-    <origin xyz="0.011 0 0" rpy="${-90*deg} ${-90*deg} ${-90*deg}"/>
-    <parent link="${prefix}link_t" />
-    <child link="${prefix}tool0" />
+  <!-- ROS-Industrial 'flange' frame: attachment point for EEF models -->
+  <link name="${prefix}flange"/>
+  <joint name="${prefix}joint_t-flange" type="fixed">
+    <origin xyz="0.011 0 0" rpy="0 0 0"/>
+    <parent link="${prefix}link_t"/>
+    <child link="${prefix}flange"/>
+  </joint>
+
+  <!-- ROS-Industrial 'tool0' frame: all-zeros tool frame -->
+  <link name="${prefix}tool0"/>
+  <joint name="${prefix}flange-tool0" type="fixed">
+    <origin xyz="0 0 0 " rpy="${180*deg} ${-90*deg} 0"/>
+    <parent link="${prefix}flange"/>
+    <child link="${prefix}tool0"/>
   </joint>
 
     <!-- ROS base_link (via base_link) to Motoman Robot (not Base) Frame transform -->
