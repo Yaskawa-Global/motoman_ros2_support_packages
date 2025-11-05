@@ -179,7 +179,16 @@
       <axis xyz="-1 0 0" />
       <limit lower="${radians(-180)}" upper="${radians(180)}" effort="255.76" velocity="${radians(200)}" />
     </joint>
+    <!-- end of joint list -->
 
+    <!-- ROS base_link (via base_link) to Motoman Robot (not Base) Frame transform -->
+    <link name="${prefix}base" />
+    <joint name="${prefix}base_link-base" type="fixed">
+      <origin xyz="0 0 0.540" rpy="0 0 0"/>
+      <parent link="${prefix}base_link"/>
+      <child link="${prefix}base"/>
+    </joint>
+    
     <!-- ROS-Industrial 'flange' frame: attachment point for EEF models -->
     <link name="${prefix}flange"/>
     <joint name="${prefix}joint_t-flange" type="fixed">
@@ -195,14 +204,6 @@
         <parent link="${prefix}flange"/>
         <child link="${prefix}tool0"/>
     </joint>
-    <!-- end of joint list -->
 
-    <!-- ROS base_link (via base_link) to Motoman Robot (not Base) Frame transform -->
-    <link name="${prefix}base" />
-    <joint name="${prefix}base_link-base" type="fixed">
-      <origin xyz="0 0 0.540" rpy="0 0 0"/>
-      <parent link="${prefix}base_link"/>
-      <child link="${prefix}base"/>
-    </joint>
   </xacro:macro>
 </robot>

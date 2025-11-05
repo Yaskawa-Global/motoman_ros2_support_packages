@@ -140,6 +140,15 @@
     <axis xyz="0 0 1" />
     <limit lower="-6.2831" upper="6.2831" effort="0.07" velocity="10.4719"/>
   </joint>
+    <!-- end of joint list -->
+
+    <!-- ROS base_link to Robot Manufacturer World Coordinates transform -->
+    <link name="${prefix}base" />
+    <joint name="${prefix}base_link-base" type="fixed">
+      <origin xyz="0 0 0.103" rpy="0 0 0"/>
+      <parent link="${prefix}base_link"/>
+      <child link="${prefix}base"/>
+    </joint>
 
   <!-- ROS-Industrial 'flange' frame: attachment point for EEF models -->
     <link name="${prefix}flange"/>
@@ -156,15 +165,6 @@
       <parent link="${prefix}flange"/>
       <child link="${prefix}tool0"/>
     </joint>
-  <!-- end of joint list -->
-
-  <!-- ROS base_link to Robot Manufacturer World Coordinates transform -->
-  <link name="${prefix}base" />
-  <joint name="${prefix}base_link-base" type="fixed">
-    <origin xyz="0 0 0.103" rpy="0 0 0"/>
-    <parent link="${prefix}base_link"/>
-    <child link="${prefix}base"/>
-  </joint>
 
   </xacro:macro>
 </robot>
