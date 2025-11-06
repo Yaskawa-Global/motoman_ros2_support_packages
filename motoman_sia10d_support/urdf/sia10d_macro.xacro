@@ -288,5 +288,22 @@
             <parent link="${prefix}base_link"/>
             <child link="${prefix}base"/>
         </joint>
+        
+        <!-- ROS-Industrial 'flange' frame: attachment point for EEF models -->
+        <link name="${prefix}flange"/>
+        <joint name="${prefix}joint_t-flange" type="fixed">
+            <origin xyz="0 0 0" rpy="0 -1.57079632679 0"/>
+            <parent link="${prefix}link_t"/>
+            <child link="${prefix}flange"/>
+        </joint>
+
+        <!-- ROS-Industrial 'tool0' frame: all-zeros tool frame -->
+        <link name="${prefix}tool0"/>
+        <joint name="${prefix}flange-tool0" type="fixed">
+            <origin xyz="0 0 0 " rpy="0 -1.57079632679 3.1415296"/>
+            <parent link="${prefix}flange"/>
+            <child link="${prefix}tool0"/>
+        </joint>
+
     </xacro:macro>
 </robot>

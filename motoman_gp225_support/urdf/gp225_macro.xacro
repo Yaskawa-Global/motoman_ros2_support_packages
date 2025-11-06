@@ -141,7 +141,6 @@
         <axis xyz="-1 0 0" />
         <limit lower="${radians(-360)}" upper="${radians(360)}" effort="2250.6" velocity="${radians(220)}"/>
     </joint>
-    <!-- end of joint list -->
 
     <!-- balancer -->
     <link name="${prefix}link_1_s_2">
@@ -182,6 +181,7 @@
         <limit lower="${radians(-60)}" upper="${radians(76)}" effort="11522.8" velocity="${radians(97)}"/>
         <mimic joint="${prefix}joint_2_l" multiplier="-0.2366"/>
     </joint>
+    <!-- end of joint list -->
 
     <!-- ROS base_link to Robot Manufacturer World Coordinates transform -->
     <link name="${prefix}base" />
@@ -206,5 +206,6 @@
         <parent link="${prefix}flange" />
         <child link="${prefix}tool0" />
     </joint>
+    
 </xacro:macro>
 </robot>

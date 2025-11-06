@@ -119,8 +119,6 @@
         <material name="black"/>
       </collision>
     </link>
-    <link name="${prefix}tool0"/>
-
     <!--
 
       Balancer and rod are disabled as without a mimic joint they will not update
@@ -210,11 +208,6 @@
       <axis xyz="0 0 1"/>
       <limit lower="${radians(-360)}" upper="${radians(360)}" effort="0" velocity="${radians(velocities['joint_6_t'])}"/>
     </joint>
-    <joint name="${prefix}joint_t-tool0" type="fixed">
-      <origin xyz="0 0 0" rpy="0 ${pi} 0"/>
-      <parent link="${prefix}link_t"/>
-      <child link="${prefix}tool0"/>
-    </joint>
 
     <!--
 
@@ -240,5 +233,22 @@
       <parent link="${prefix}base_link"/>
       <child link="${prefix}base"/>
     </joint>
+
+    <!-- ROS-Industrial 'flange' frame: attachment point for EEF models -->
+    <link name="${prefix}flange"/>
+    <joint name="${prefix}link_t-flange" type="fixed">
+      <origin xyz="0 0 0" rpy="0 ${radians(90)} 0"/>
+      <parent link="${prefix}link_t"/>
+      <child link="${prefix}flange"/>
+    </joint>
+
+    <!-- ROS-Industrial 'tool0' frame: all-zeros tool frame -->
+    <link name="${prefix}tool0"/>
+    <joint name="${prefix}flange-tool0" type="fixed">
+      <origin xyz="0 0 0" rpy="${radians(180)} ${radians(-90)} 0"/>
+      <parent link="${prefix}flange"/>
+      <child link="${prefix}tool0"/>
+    </joint>
+    
   </xacro:macro>
 </robot>
