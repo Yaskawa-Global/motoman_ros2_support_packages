@@ -1,5 +1,5 @@
 <launch>
-  <let name="xacro_path" value="$(find-pkg-share motoman_gp180_support)/urdf/gp180_120.xacro" />
+  <let name="xacro_path" value="'$(find-pkg-share motoman_gp180_support)/urdf/gp180_120.xacro'" />
   <let name="rviz_cfg" value="$(find-pkg-share motoman_resources)/rviz/view_robot.rviz" />
 
   <node pkg="robot_state_publisher" exec="robot_state_publisher">
