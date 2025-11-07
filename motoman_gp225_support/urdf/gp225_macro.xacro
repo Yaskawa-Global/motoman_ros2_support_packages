@@ -143,23 +143,23 @@
     </joint>
 
     <!-- balancer -->
-    <link name="${prefix}balancer_1">
+    <link name="${prefix}balancer_link_1">
         <visual>
             <geometry>
-                <mesh filename="package://motoman_gp225_support/meshes/gp225/visual/balancer_1.dae"/>
+                <mesh filename="package://motoman_gp225_support/meshes/gp225/visual/balancer_link_1.dae"/>
             </geometry>
             <xacro:material_yaskawa_blue/>
         </visual>
         <collision>
             <geometry>
-                <mesh filename="package://motoman_gp225_support/meshes/gp225/collision/balancer_1.stl"/>
+                <mesh filename="package://motoman_gp225_support/meshes/gp225/collision/balancer_link_1.stl"/>
             </geometry>
         </collision>
     </link>
-    <link name="${prefix}balancer_2">
+    <link name="${prefix}balancer_link_2">
         <visual>
             <geometry>
-                <mesh filename="package://motoman_gp225_support/meshes/gp225/visual/balancer_2.dae"/>
+                <mesh filename="package://motoman_gp225_support/meshes/gp225/visual/balancer_link_2.dae"/>
             </geometry>
             <xacro:material_yaskawa_blue/>
         </visual>
@@ -167,7 +167,7 @@
     </link>
     <joint name="${prefix}balancer_joint_1" type="revolute">
         <parent link="${prefix}link_1"/>
-        <child link="${prefix}balancer_1"/>
+        <child link="${prefix}balancer_link_1"/>
         <origin xyz="0.3989 0 -0.2576" rpy="0 0 0" />
         <axis xyz="0 1 0" />
         <limit lower="${radians(-60)}" upper="${radians(76)}" effort="11522.8" velocity="${radians(97)}"/>
@@ -175,7 +175,7 @@
     </joint>
     <joint name="${prefix}balancer_joint_2" type="revolute">
         <parent link="${prefix}link_2"/>
-        <child link="${prefix}balancer_2"/>
+        <child link="${prefix}balancer_link_2"/>
         <origin xyz="0 0 0.720" rpy="0 0 0" />
         <axis xyz="0 1 0" />
         <limit lower="${radians(-60)}" upper="${radians(76)}" effort="11522.8" velocity="${radians(97)}"/>
