@@ -20,66 +20,66 @@
     <link name="${prefix}link_1_s">
       <visual>
         <geometry>
-          <mesh filename="package://motoman_hc20_support/meshes/hc20/visual/link_1_s.dae"/>
+          <mesh filename="package://motoman_hc20_support/meshes/hc20/visual/link_1.dae"/>
         </geometry>
         <xacro:material_yaskawa_white/>
       </visual>
       <collision>
         <geometry>
-          <mesh filename="package://motoman_hc20_support/meshes/hc20/collision/link_1_s.stl"/>
+          <mesh filename="package://motoman_hc20_support/meshes/hc20/collision/link_1.stl"/>
         </geometry>
       </collision>
     </link>
     <link name="${prefix}link_2_l">
       <visual>
         <geometry>
-          <mesh filename="package://motoman_hc20_support/meshes/hc20/visual/link_2_l.dae"/>
+          <mesh filename="package://motoman_hc20_support/meshes/hc20/visual/link_2.dae"/>
         </geometry>
         <xacro:material_yaskawa_white/>
       </visual>
       <collision>
         <geometry>
-          <mesh filename="package://motoman_hc20_support/meshes/hc20/collision/link_2_l.stl"/>
+          <mesh filename="package://motoman_hc20_support/meshes/hc20/collision/link_2.stl"/>
         </geometry>
       </collision>
     </link>
     <link name="${prefix}link_3_u">
       <visual>
         <geometry>
-          <mesh filename="package://motoman_hc20_support/meshes/hc20/visual/link_3_u.dae"/>
+          <mesh filename="package://motoman_hc20_support/meshes/hc20/visual/link_3.dae"/>
         </geometry>
         <xacro:material_yaskawa_white/>
       </visual>
       <collision>
         <geometry>
-          <mesh filename="package://motoman_hc20_support/meshes/hc20/collision/link_3_u.stl"/>
+          <mesh filename="package://motoman_hc20_support/meshes/hc20/collision/link_3.stl"/>
         </geometry>
       </collision>
     </link>
     <link name="${prefix}link_4_r">
       <visual>
         <geometry>
-          <mesh filename="package://motoman_hc20_support/meshes/hc20/visual/link_4_r.dae"/>
+          <mesh filename="package://motoman_hc20_support/meshes/hc20/visual/link_4.dae"/>
         </geometry>
         <xacro:material_yaskawa_white/>
       </visual>
       <collision>
         <geometry>
-          <mesh filename="package://motoman_hc20_support/meshes/hc20/collision/link_4_r.stl"/>
+          <mesh filename="package://motoman_hc20_support/meshes/hc20/collision/link_4.stl"/>
         </geometry>
       </collision>
     </link>
     <link name="${prefix}link_5_b">
       <visual>
         <geometry>
-          <mesh filename="package://motoman_hc20_support/meshes/hc20dtp/visual/link_5_b.dae"/>
+          <mesh filename="package://motoman_hc20_support/meshes/hc20dtp/visual/link_5.dae"/>
         </geometry>
         <origin rpy="0 1.57075 0"/>
         <xacro:material_yaskawa_white/>
       </visual>
       <collision>
         <geometry>
-          <mesh filename="package://motoman_hc20_support/meshes/hc20dtp/collision/link_5_b.stl"/>
+          <mesh filename="package://motoman_hc20_support/meshes/hc20dtp/collision/link_5.stl"/>
         </geometry>
         <origin rpy="0 1.57075 0"/>
       </collision>
@@ -87,14 +87,14 @@
     <link name="${prefix}link_6_t">
       <visual>
         <geometry>
-          <mesh filename="package://motoman_hc20_support/meshes/hc20dtp/visual/link_6_t.dae"/>
+          <mesh filename="package://motoman_hc20_support/meshes/hc20dtp/visual/link_6.dae"/>
         </geometry>
         <origin rpy="0 1.57075 0"/>
         <xacro:material_yaskawa_white/>
       </visual>
       <collision>
         <geometry>
-          <mesh filename="package://motoman_hc20_support/meshes/hc20dtp/collision/link_6_t.stl"/>
+          <mesh filename="package://motoman_hc20_support/meshes/hc20dtp/collision/link_6.stl"/>
         </geometry>
         <origin rpy="0 1.57075 0"/>
       </collision>
