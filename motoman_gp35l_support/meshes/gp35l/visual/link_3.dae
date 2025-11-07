@@ -537,9 +537,9 @@
   </library_geometries>
   <library_visual_scenes>
     <visual_scene id="Scene" name="Scene">
-      <node id="link3_008" name="link3.008" type="NODE">
+      <node id="link_3_008" name="link_3.008" type="NODE">
         <matrix sid="transform">0.1497291 0.6894401 -0.06208852 0.182 -0.1784402 0.5785089 0.07399421 -0.148 0.8693333 0 0.02588191 0.3539999 0 0 0 1</matrix>
-        <instance_geometry url="#polygons_015-mesh" name="link3.008">
+        <instance_geometry url="#polygons_015-mesh" name="link_3.008">
           <bind_material>
             <technique_common>
               <instance_material symbol="Surface_9_011-material" target="#Surface_9_011-material"/>
@@ -547,9 +547,9 @@
           </bind_material>
         </instance_geometry>
       </node>
-      <node id="link3_007" name="link3.007" type="NODE">
+      <node id="link_3_007" name="link_3.007" type="NODE">
         <matrix sid="transform">0.3803565 0 -0.09063078 0.23 0 0.9000001 0 -0.145 0.8156771 0 0.04226182 0.332 0 0 0 1</matrix>
-        <instance_geometry url="#polygons_014-mesh" name="link3.007">
+        <instance_geometry url="#polygons_014-mesh" name="link_3.007">
           <bind_material>
             <technique_common>
               <instance_material symbol="Surface_9_010-material" target="#Surface_9_010-material"/>
@@ -557,9 +557,9 @@
           </bind_material>
         </instance_geometry>
       </node>
-      <node id="link3_006" name="link3.006" type="NODE">
+      <node id="link_3_006" name="link_3.006" type="NODE">
         <matrix sid="transform">0.7794229 0 -0.065 0.265 0 0.9000001 0 -0.145 0.45 0 0.1125833 0.2679998 0 0 0 1</matrix>
-        <instance_geometry url="#polygons_013-mesh" name="link3.006">
+        <instance_geometry url="#polygons_013-mesh" name="link_3.006">
           <bind_material>
             <technique_common>
               <instance_material symbol="Surface_9_009-material" target="#Surface_9_009-material"/>
@@ -567,9 +567,9 @@
           </bind_material>
         </instance_geometry>
       </node>
-      <node id="link3_005" name="link3.005" type="NODE">
+      <node id="link_3_005" name="link_3.005" type="NODE">
         <matrix sid="transform">-0.4078386 -0.7794229 -0.02747019 0.285 0.7063971 -0.4500001 0.04757976 -0.175 -0.3803565 0 0.11782 0.1979998 0 0 0 1</matrix>
-        <instance_geometry url="#polygons_012-mesh" name="link3.005">
+        <instance_geometry url="#polygons_012-mesh" name="link_3.005">
           <bind_material>
             <technique_common>
               <instance_material symbol="Surface_9_008-material" target="#Surface_9_008-material"/>
@@ -577,9 +577,9 @@
           </bind_material>
         </instance_geometry>
       </node>
-      <node id="link3_004" name="link3.004" type="NODE">
+      <node id="link_3_004" name="link_3.004" type="NODE">
         <matrix sid="transform">0.2561761 -0.779423 0.05343933 0.255 0.4437099 0.45 0.09255965 -0.32 -0.7399294 0 0.0740064 0.1579999 0 0 0 1</matrix>
-        <instance_geometry url="#polygons_011-mesh" name="link3.004">
+        <instance_geometry url="#polygons_011-mesh" name="link_3.004">
           <bind_material>
             <technique_common>
               <instance_material symbol="Surface_9_007-material" target="#Surface_9_007-material"/>
@@ -587,9 +587,9 @@
           </bind_material>
         </instance_geometry>
       </node>
-      <node id="link3_002" name="link3.002" type="NODE">
+      <node id="link_3_002" name="link_3.002" type="NODE">
         <matrix sid="transform">0.45 0 0.2165064 0.02500001 0 0.9000001 0 -0.32 -0.779423 0 0.125 -0.03000009 0 0 0 1</matrix>
-        <instance_geometry url="#polygons_010-mesh" name="link3.002">
+        <instance_geometry url="#polygons_010-mesh" name="link_3.002">
           <bind_material>
             <technique_common>
               <instance_material symbol="Surface_9_006-material" target="#Surface_9_006-material"/>
@@ -597,9 +597,9 @@
           </bind_material>
         </instance_geometry>
       </node>
-      <node id="link3_003" name="link3.003" type="NODE">
+      <node id="link_3_003" name="link_3.003" type="NODE">
         <matrix sid="transform">0.6688304 0 0.1672827 0.16 0 0.9000001 0 -0.32 -0.6022176 0 0.1857862 0.04799998 0 0 0 1</matrix>
-        <instance_geometry url="#polygons_008-mesh" name="link3.003">
+        <instance_geometry url="#polygons_008-mesh" name="link_3.003">
           <bind_material>
             <technique_common>
               <instance_material symbol="Surface_9_004-material" target="#Surface_9_004-material"/>
@@ -607,9 +607,9 @@
           </bind_material>
         </instance_geometry>
       </node>
-      <node id="link3" name="link3" type="NODE">
+      <node id="link_3" name="link_3" type="NODE">
         <matrix sid="transform">-4.37114e-8 -1 4.37114e-8 0 0 -4.37114e-8 -1 0 1 -4.37114e-8 1.91069e-15 0 0 0 0 1</matrix>
-        <instance_geometry url="#model_h34_0_1-mesh" name="link3">
+        <instance_geometry url="#model_h34_0_1-mesh" name="link_3">
           <bind_material>
             <technique_common>
               <instance_material symbol="Surface_3_002-material" target="#Surface_3_002-material"/>

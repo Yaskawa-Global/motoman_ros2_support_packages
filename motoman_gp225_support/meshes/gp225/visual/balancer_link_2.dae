@@ -71,9 +71,9 @@
   </library_geometries>
   <library_visual_scenes>
     <visual_scene id="Scene" name="Scene">
-      <node id="link_2_l_2" name="link_2_l_2" type="NODE">
+      <node id="balancer_link_2" name="balancer_link_2" type="NODE">
         <matrix sid="transform">1 0 0 -0.325 0 1 0 0 0 0 1 -1.37 0 0 0 1</matrix>
-        <instance_geometry url="#polygons_002-mesh" name="link_2_l_2">
+        <instance_geometry url="#polygons_002-mesh" name="balancer_link_2">
           <bind_material>
             <technique_common>
               <instance_material symbol="Surface_1_004-material" target="#Surface_1_004-material"/>

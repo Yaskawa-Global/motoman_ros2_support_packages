@@ -74,13 +74,13 @@
     </geometry>
   </library_geometries>
   <library_animations>
-    <animation id="action_container-link_6_t" name="link_6_t"/>
+    <animation id="action_container-link_6" name="link_6"/>
   </library_animations>
   <library_visual_scenes>
     <visual_scene id="Scene" name="Scene">
-      <node id="link_6_t" name="link_6_t" type="NODE">
+      <node id="link_6" name="link_6" type="NODE">
         <matrix sid="transform">1 0 0 0.223 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
-        <instance_geometry url="#polygons-mesh" name="link_6_t">
+        <instance_geometry url="#polygons-mesh" name="link_6">
           <bind_material>
             <technique_common>
               <instance_material symbol="Surface_1-material" target="#Surface_1-material"/>

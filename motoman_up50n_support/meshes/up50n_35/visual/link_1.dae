@@ -96,9 +96,9 @@
   </library_geometries>
   <library_visual_scenes>
     <visual_scene id="Scene" name="Scene">
-      <node id="link_1_s" name="link_1_s" type="NODE">
+      <node id="link_1" name="link_1" type="NODE">
         <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
-        <instance_geometry url="#model_h32_0_1-mesh" name="link_1_s">
+        <instance_geometry url="#model_h32_0_1-mesh" name="link_1">
           <bind_material>
             <technique_common>
               <instance_material symbol="Surface_1_001-material" target="#Surface_1_001-material"/>
