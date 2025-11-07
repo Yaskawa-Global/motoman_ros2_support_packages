@@ -18,7 +18,7 @@
         </geometry>
       </collision>
     </link>
-    <link name="${prefix}link_1_s">
+    <link name="${prefix}link_1">
       <visual>
         <geometry>
           <mesh filename="package://motoman_ar2010_support/meshes/visual/link_1.stl"/>
@@ -31,7 +31,7 @@
         </geometry>
       </collision>
     </link>
-    <link name="${prefix}link_2_l">
+    <link name="${prefix}link_2">
       <visual>
         <geometry>
           <mesh filename="package://motoman_ar2010_support/meshes/visual/link_2.stl"/>
@@ -44,7 +44,7 @@
         </geometry>
       </collision>
     </link>
-    <link name="${prefix}link_3_u">
+    <link name="${prefix}link_3">
       <visual>
         <geometry>
           <mesh filename="package://motoman_ar2010_support/meshes/visual/link_3.stl"/>
@@ -57,7 +57,7 @@
         </geometry>
       </collision>
     </link>
-    <link name="${prefix}link_4_r">
+    <link name="${prefix}link_4">
       <visual>
         <geometry>
           <mesh filename="package://motoman_ar2010_support/meshes/visual/link_4.stl"/>
@@ -70,7 +70,7 @@
         </geometry>
       </collision>
     </link>
-    <link name="${prefix}link_5_b">
+    <link name="${prefix}link_5">
       <visual>
         <geometry>
           <mesh filename="package://motoman_ar2010_support/meshes/visual/link_5.stl"/>
@@ -83,7 +83,7 @@
         </geometry>
       </collision>
     </link>
-    <link name="${prefix}link_6_t">
+    <link name="${prefix}link_6">
       <visual>
         <geometry>
           <mesh filename="package://motoman_ar2010_support/meshes/visual/link_6.stl"/>
@@ -100,44 +100,44 @@
 
     <!-- joint list -->
     <!-- Joints are specified such that the driver rotates the joints about the positive Z axis. -->
-    <joint name="${prefix}joint_1_s" type="revolute">
+    <joint name="${prefix}joint_1" type="revolute">
       <parent link="${prefix}base_link"/>
-      <child link="${prefix}link_1_s"/>
+      <child link="${prefix}link_1"/>
       <origin xyz="0 0 0.505" rpy="0 0 0"/>
       <axis xyz="0 0 1"/>
       <limit lower="${radians(-180)}" upper="${radians(180)}" effort="3087" velocity="${radians(210)}"/>
     </joint>
-    <joint name="${prefix}joint_2_l" type="revolute">
-      <parent link="${prefix}link_1_s"/>
-      <child link="${prefix}link_2_l"/>
+    <joint name="${prefix}joint_2" type="revolute">
+      <parent link="${prefix}link_1"/>
+      <child link="${prefix}link_2"/>
       <origin xyz="0.150 0 0" rpy="${pi/2} ${-pi/2} ${-pi}"/>
       <axis xyz="0 0 1"/>
       <limit lower="${radians(-105)}" upper="${radians(155)}" effort="3087" velocity="${radians(210)}"/>
     </joint>
-    <joint name="${prefix}joint_3_u" type="revolute">
-      <parent link="${prefix}link_2_l"/>
-      <child link="${prefix}link_3_u"/>
+    <joint name="${prefix}joint_3" type="revolute">
+      <parent link="${prefix}link_2"/>
+      <child link="${prefix}link_3"/>
       <origin xyz="0.760 0 0" rpy="${pi} 0 0"/>
       <axis xyz="0 0 1"/>
       <limit lower="${radians(-86)}" upper="${radians(160)}" effort="926.1" velocity="${radians(220)}"/>
     </joint>
-    <joint name="${prefix}joint_4_r" type="revolute">
-      <parent link="${prefix}link_3_u"/>
-      <child link="${prefix}link_4_r"/>
+    <joint name="${prefix}joint_4" type="revolute">
+      <parent link="${prefix}link_3"/>
+      <child link="${prefix}link_4"/>
       <origin xyz="0.200 -1.082 0" rpy="${-pi/2} 0 0"/>
       <axis xyz="0 0 1"/>
       <limit lower="${radians(-150)}" upper="${radians(150)}" effort="78.4" velocity="${radians(435)}"/>
     </joint>
-    <joint name="${prefix}joint_5_b" type="revolute">
-      <parent link="${prefix}link_4_r"/>
-      <child link="${prefix}link_5_b"/>
+    <joint name="${prefix}joint_5" type="revolute">
+      <parent link="${prefix}link_4"/>
+      <child link="${prefix}link_5"/>
       <origin xyz="0 0 0" rpy="${pi/2} 0 0"/>
       <axis xyz="0 0 1"/>
       <limit lower="${radians(-135)}" upper="${radians(90)}" effort="67.03" velocity="${radians(435)}"/>
     </joint>
-    <joint name="${prefix}joint_6_t" type="revolute">
-      <parent link="${prefix}link_5_b"/>
-      <child link="${prefix}link_6_t"/>
+    <joint name="${prefix}joint_6" type="revolute">
+      <parent link="${prefix}link_5"/>
+      <child link="${prefix}link_6"/>
       <origin xyz="0 -0.100 0" rpy="${-pi/2} 0 0"/>
       <axis xyz="0 0 1"/>
       <limit lower="${radians(-210)}" upper="${radians(210)}" effort="33.3" velocity="${radians(700)}"/>
@@ -154,9 +154,9 @@
 
     <!-- ROS-Industrial 'flange' frame: attachment point for EEF models -->
     <link name="${prefix}flange"/>
-    <joint name="${prefix}joint_6_t-flange" type="fixed">
+    <joint name="${prefix}joint_6-flange" type="fixed">
       <origin xyz="0 0 0" rpy="0 ${pi/2} 0"/>
-      <parent link="${prefix}link_6_t"/>
+      <parent link="${prefix}link_6"/>
       <child link="${prefix}flange"/>
     </joint>
 

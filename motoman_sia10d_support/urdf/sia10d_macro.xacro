@@ -31,7 +31,7 @@
             <material>Gazebo/Blue</material>
         </gazebo>
 
-        <link name="${prefix}link_s">
+        <link name="${prefix}link_1">
             <visual>
                 <geometry>
                     <mesh filename="package://motoman_sia10d_support/meshes/sia10d/visual/link_1.stl"/>
@@ -51,13 +51,13 @@
                 </inertial>
         </link>
 
-        <gazebo reference="${prefix}link_s">
+        <gazebo reference="${prefix}link_1">
                 <turnGravityOff>false</turnGravityOff>
                 <selfCollide>true</selfCollide>
             <material>Gazebo/White</material>
         </gazebo>
 
-        <link name="${prefix}link_l">
+        <link name="${prefix}link_2">
             <visual>
                 <origin rpy="1.57 3.1416 0" xyz="0 0 0"/>
                 <geometry>
@@ -79,13 +79,13 @@
                 </inertial>
         </link>
 
-        <gazebo reference="${prefix}link_l">
+        <gazebo reference="${prefix}link_2">
                 <turnGravityOff>false</turnGravityOff>
                 <selfCollide>true</selfCollide>
             <material>Gazebo/Blue</material>
         </gazebo>
 
-        <link name="${prefix}link_e">
+        <link name="${prefix}link_3">
             <visual>
                 <origin rpy="0 0 3.1415" xyz="0 0 0"/>
                 <geometry>
@@ -107,13 +107,13 @@
                 </inertial>
         </link>
 
-        <gazebo reference="${prefix}link_e">
+        <gazebo reference="${prefix}link_3">
                 <turnGravityOff>false</turnGravityOff>
                 <selfCollide>true</selfCollide>
             <material>Gazebo/White</material>
         </gazebo>
 
-        <link name="${prefix}link_u">
+        <link name="${prefix}link_4">
             <visual>
                 <origin rpy="1.57 -3.1415 0" xyz="0 0 0"/>
                 <geometry>
@@ -135,13 +135,13 @@
                 </inertial>
         </link>
 
-        <gazebo reference="${prefix}link_u">
+        <gazebo reference="${prefix}link_4">
                 <turnGravityOff>false</turnGravityOff>
                 <selfCollide>true</selfCollide>
             <material>Gazebo/Blue</material>
         </gazebo>
 
-        <link name="${prefix}link_r">
+        <link name="${prefix}link_5">
             <visual>
                 <origin rpy="0 0 3.1416" xyz="0 0 0"/>
                 <geometry>
@@ -163,13 +163,13 @@
                 </inertial>
         </link>
         
-        <gazebo reference="${prefix}link_r">
+        <gazebo reference="${prefix}link_5">
                 <turnGravityOff>false</turnGravityOff>
                 <selfCollide>true</selfCollide>
             <material>Gazebo/White</material>
         </gazebo>
 
-        <link name="${prefix}link_b">
+        <link name="${prefix}link_6">
             <visual>
                 <origin rpy="-1.57 0 3.1416" xyz="0 0 0"/>
                 <geometry>
@@ -191,13 +191,13 @@
                 </inertial>
         </link>
 
-        <gazebo reference="${prefix}link_b">
+        <gazebo reference="${prefix}link_6">
                 <turnGravityOff>false</turnGravityOff>
                 <selfCollide>true</selfCollide>
             <material>Gazebo/Blue</material>
         </gazebo>
 
-        <link name="${prefix}link_t">
+        <link name="${prefix}link_7">
             <visual>
                 <geometry>
                     <mesh filename="package://motoman_sia10d_support/meshes/sia10d/visual/link_7.stl" />
@@ -217,7 +217,7 @@
                 </inertial>
         </link>
 
-        <gazebo reference="${prefix}link_t">
+        <gazebo reference="${prefix}link_7">
                 <turnGravityOff>false</turnGravityOff>
                 <selfCollide>true</selfCollide>
             <material>Gazebo/White</material>
@@ -230,51 +230,51 @@
             <parent link="world" />
             <child link="base_link"/>
         </joint>
-        <joint name="${prefix}joint_s" type="revolute">
+        <joint name="${prefix}joint_1" type="revolute">
             <parent link="${prefix}base_link"/>
-            <child link="${prefix}link_s"/>
+            <child link="${prefix}link_1"/>
             <origin xyz="0 0 0.36" rpy="0 0 0"/>
             <axis xyz="0 0 1" />
             <limit lower="-3.1415" upper="3.1415" effort="100" velocity="2.9670" />
         </joint>
-        <joint name="${prefix}joint_l" type="revolute">
-            <parent link="${prefix}link_s"/>
-            <child link="${prefix}link_l"/>
+        <joint name="${prefix}joint_2" type="revolute">
+            <parent link="${prefix}link_1"/>
+            <child link="${prefix}link_2"/>
             <origin xyz="0 0 0" rpy="0 0 0"/>
             <axis xyz="0 1 0" />
             <limit lower="-1.9198" upper="1.9198" effort="100" velocity="2.9670" />
         </joint>
-        <joint name="${prefix}joint_e" type="revolute">
-            <parent link="${prefix}link_l"/>
-            <child link="${prefix}link_e"/>
+        <joint name="${prefix}joint_3" type="revolute">
+            <parent link="${prefix}link_2"/>
+            <child link="${prefix}link_3"/>
             <origin xyz="0 0 0.36" rpy="0 0 0"/>
             <axis xyz="0 0 1" />
             <limit lower="-2.9670" upper="2.9670" effort="100" velocity="2.9670" />
         </joint>
-        <joint name="${prefix}joint_u" type="revolute">
-            <parent link="${prefix}link_e"/>
-            <child link="${prefix}link_u"/>
+        <joint name="${prefix}joint_4" type="revolute">
+            <parent link="${prefix}link_3"/>
+            <child link="${prefix}link_4"/>
             <origin xyz="0 0 0" rpy="0 0 0"/>
             <axis xyz="0 -1 0" />
             <limit lower="-2.3561" upper="2.3561" effort="100" velocity="2.9670" />
         </joint>
-        <joint name="${prefix}joint_r" type="revolute">
-            <parent link="${prefix}link_u"/>
-            <child link="${prefix}link_r"/>
+        <joint name="${prefix}joint_5" type="revolute">
+            <parent link="${prefix}link_4"/>
+            <child link="${prefix}link_5"/>
             <origin xyz="0 0 0.360" rpy="0 0 0"/>
             <axis xyz="0 0 -1" />
             <limit lower="-3.1415" upper="3.1415" effort="100" velocity="3.4906" />
         </joint>
-        <joint name="${prefix}joint_b" type="revolute">
-            <parent link="${prefix}link_r"/>
-            <child link="${prefix}link_b"/>
+        <joint name="${prefix}joint_6" type="revolute">
+            <parent link="${prefix}link_5"/>
+            <child link="${prefix}link_6"/>
             <origin xyz="0 0 0" rpy="0 0 0"/>
             <axis xyz="0 -1 0" />
             <limit lower="-1.9198" upper="1.9198" effort="100" velocity="3.4906" />
         </joint>
-        <joint name="${prefix}joint_t" type="revolute">
-            <parent link="${prefix}link_b"/>
-            <child link="${prefix}link_t"/>
+        <joint name="${prefix}joint_7" type="revolute">
+            <parent link="${prefix}link_6"/>
+            <child link="${prefix}link_7"/>
             <origin xyz="0 0 0.155" rpy="0 0 0"/>
             <axis xyz="0 0 -1" />
             <limit lower="-3.1415" upper="3.1415" effort="100" velocity="6.9813" />
@@ -291,9 +291,9 @@
         
         <!-- ROS-Industrial 'flange' frame: attachment point for EEF models -->
         <link name="${prefix}flange"/>
-        <joint name="${prefix}joint_t-flange" type="fixed">
+        <joint name="${prefix}joint_7-flange" type="fixed">
             <origin xyz="0 0 0" rpy="0 -1.57079632679 0"/>
-            <parent link="${prefix}link_t"/>
+            <parent link="${prefix}link_7"/>
             <child link="${prefix}flange"/>
         </joint>
 
