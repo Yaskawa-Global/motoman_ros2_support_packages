@@ -227,9 +227,9 @@
   </library_geometries>
   <library_visual_scenes>
     <visual_scene id="Scene" name="Scene">
-      <node id="link2_002" name="link2.002" type="NODE">
+      <node id="link_2_002" name="link_2.002" type="NODE">
         <matrix sid="transform">0.7794229 0 0.05 0 0 0.9000001 0 -0.32 -0.45 0 0.08660254 1.07 0 0 0 1</matrix>
-        <instance_geometry url="#polygons_009-mesh" name="link2.002">
+        <instance_geometry url="#polygons_009-mesh" name="link_2.002">
           <bind_material>
             <technique_common>
               <instance_material symbol="Surface_9_005-material" target="#Surface_9_005-material"/>
@@ -237,9 +237,9 @@
           </bind_material>
         </instance_geometry>
       </node>
-      <node id="link2_001" name="link2.001" type="NODE">
+      <node id="link_2_001" name="link_2.001" type="NODE">
         <matrix sid="transform">0.9000001 0 0 0 0 0.8981242 -0.04710858 -0.29 0 0.05807906 0.7284786 -0.015 0 0 0 1</matrix>
-        <instance_geometry url="#polygons_006-mesh" name="link2.001">
+        <instance_geometry url="#polygons_006-mesh" name="link_2.001">
           <bind_material>
             <technique_common>
               <instance_material symbol="Surface_9_002-material" target="#Surface_9_002-material"/>
@@ -247,9 +247,9 @@
           </bind_material>
         </instance_geometry>
       </node>
-      <node id="link2" name="link2" type="NODE">
+      <node id="link_2" name="link_2" type="NODE">
         <matrix sid="transform">1 0 0 0 0 1 0 -0.32 0 0 0.9999999 0.445 0 0 0 1</matrix>
-        <instance_geometry url="#polygons_005-mesh" name="link2">
+        <instance_geometry url="#polygons_005-mesh" name="link_2">
           <bind_material>
             <technique_common>
               <instance_material symbol="Surface_9-material" target="#Surface_9-material"/>

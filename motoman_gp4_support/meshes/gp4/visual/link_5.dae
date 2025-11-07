@@ -71,9 +71,9 @@
   </library_geometries>
   <library_visual_scenes>
     <visual_scene id="Scene" name="Scene">
-      <node id="gp4_link_5_b" name="gp4_link_5_b" type="NODE">
+      <node id="link_5" name="link_5" type="NODE">
         <matrix sid="transform">-1 -2.72797e-14 -1.50996e-7 -0.29 -1.50996e-7 1.62921e-7 1 0 -2.6794e-15 1 -1.62921e-7 -0.605 0 0 0 1</matrix>
-        <instance_geometry url="#f_1-06vx4-a00_lk5_1_001-mesh" name="gp4_link_5_b">
+        <instance_geometry url="#f_1-06vx4-a00_lk5_1_001-mesh" name="link_5">
           <bind_material>
             <technique_common>
               <instance_material symbol="Surface_1_013-material" target="#Surface_1_013-material"/>

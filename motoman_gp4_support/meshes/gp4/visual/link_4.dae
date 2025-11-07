@@ -175,9 +175,9 @@
           </bind_material>
         </instance_geometry>
       </node>
-      <node id="link_4_r" name="link_4_r" type="NODE">
+      <node id="link_4" name="link_4" type="NODE">
         <matrix sid="transform">-0.0254 0 -2.22054e-9 -0.29 -2.22054e-9 1.11027e-9 0.0254 0 0 0.0254 -1.11027e-9 -0.605 0 0 0 1</matrix>
-        <instance_geometry url="#R_VIEW_YR-1-06VX4-A00-mesh" name="link_4_r">
+        <instance_geometry url="#R_VIEW_YR-1-06VX4-A00-mesh" name="link_4">
           <bind_material>
             <technique_common>
               <instance_material symbol="Surface_1_005-material" target="#Surface_1_005-material"/>

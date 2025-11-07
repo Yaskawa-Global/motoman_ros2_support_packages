@@ -236,9 +236,9 @@
           </bind_material>
         </instance_geometry>
       </node>
-      <node id="link1" name="link1" type="NODE">
+      <node id="link_1" name="link_1" type="NODE">
         <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
-        <instance_geometry url="#model_h32_0_1_001-mesh" name="link1">
+        <instance_geometry url="#model_h32_0_1_001-mesh" name="link_1">
           <bind_material>
             <technique_common>
               <instance_material symbol="Surface_9_001-material" target="#Surface_9_001-material"/>
@@ -247,9 +247,9 @@
           </bind_material>
         </instance_geometry>
       </node>
-      <node id="link1_001" name="link1.001" type="NODE">
+      <node id="link_1_001" name="link_1.001" type="NODE">
         <matrix sid="transform">-0.4500001 0.06793114 -0.2156825 0.155 -2.60666e-8 0.8965753 0.02178892 -0.29 0.779423 0.03922009 -0.1245243 -0.005 0 0 0 1</matrix>
-        <instance_geometry url="#polygons_007-mesh" name="link1.001">
+        <instance_geometry url="#polygons_007-mesh" name="link_1.001">
           <bind_material>
             <technique_common>
               <instance_material symbol="Surface_9_003-material" target="#Surface_9_003-material"/>
