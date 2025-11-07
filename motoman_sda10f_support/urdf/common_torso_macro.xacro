@@ -5,13 +5,13 @@
     <link name="${prefix}base_link">
       <visual>
         <geometry>
-          <mesh filename="package://motoman_sda10f_support/meshes/sda10f/visual/base.stl" />
+          <mesh filename="package://motoman_sda10f_support/meshes/sda10f/visual/base_link.stl" />
         </geometry>
         <xacro:material_yaskawa_blue/>
       </visual>
       <collision>
         <geometry>
-          <mesh filename="package://motoman_sda10f_support/meshes/sda10f/collision/base.stl" />
+          <mesh filename="package://motoman_sda10f_support/meshes/sda10f/collision/base_link.stl" />
         </geometry>
       </collision>
     </link>
@@ -19,14 +19,14 @@
       <visual>
         <origin rpy="0 0 0" xyz="0 0 0"/>
         <geometry>
-          <mesh filename="package://motoman_sda10f_support/meshes/sda10f/visual/link_b1.stl"/>
+          <mesh filename="package://motoman_sda10f_support/meshes/sda10f/visual/link_1.stl"/>
         </geometry>
         <xacro:material_yaskawa_white/>
       </visual>
       <collision>
         <origin rpy="0 0 0" xyz="0 0 0"/>
         <geometry>
-          <mesh filename="package://motoman_sda10f_support/meshes/sda10f/collision/link_b1.stl" />
+          <mesh filename="package://motoman_sda10f_support/meshes/sda10f/collision/link_1.stl" />
         </geometry>
       </collision>
     </link>

@@ -21,13 +21,13 @@
     <link name="${prefix}link_1_s">
         <visual>
             <geometry>
-                <mesh filename="package://motoman_gp180_support/meshes/gp180_120/visual/link_1_s.stl"/>
+                <mesh filename="package://motoman_gp180_support/meshes/gp180_120/visual/link_1.stl"/>
             </geometry>
             <xacro:material_yaskawa_blue/>
         </visual>
         <collision>
             <geometry>
-                <mesh filename="package://motoman_gp180_support/meshes/gp180_120/collision/link_1_s.stl"/>
+                <mesh filename="package://motoman_gp180_support/meshes/gp180_120/collision/link_1.stl"/>
             </geometry>
         </collision>
     </link>
@@ -35,14 +35,14 @@
         <visual>
             <origin rpy="${radians(90)} ${radians(0)} ${radians(90)}" />
             <geometry>
-                <mesh filename="package://motoman_gp180_support/meshes/gp180_120/visual/link_2_l.stl"/>
+                <mesh filename="package://motoman_gp180_support/meshes/gp180_120/visual/link_2.stl"/>
             </geometry>
             <xacro:material_yaskawa_blue/>
         </visual>
         <collision>
             <origin rpy="${radians(90)} ${radians(0)} ${radians(90)}" />
             <geometry>
-                <mesh filename="package://motoman_gp180_support/meshes/gp180_120/collision/link_2_l.stl"/>
+                <mesh filename="package://motoman_gp180_support/meshes/gp180_120/collision/link_2.stl"/>
             </geometry>
         </collision>
     </link>
@@ -50,14 +50,14 @@
         <visual>
             <origin rpy="${radians(-90)} ${radians(0)} ${radians(-90)}" />
             <geometry>
-                <mesh filename="package://motoman_gp180_support/meshes/gp180/visual/link_3_u.stl"/>
+                <mesh filename="package://motoman_gp180_support/meshes/gp180/visual/link_3.stl"/>
             </geometry>
             <xacro:material_yaskawa_blue/>
         </visual>
         <collision>
             <origin rpy="${radians(-90)} ${radians(0)} ${radians(-90)}" />
             <geometry>
-                <mesh filename="package://motoman_gp180_support/meshes/gp180/collision/link_3_u.stl"/>
+                <mesh filename="package://motoman_gp180_support/meshes/gp180/collision/link_3.stl"/>
             </geometry>
         </collision>
     </link>
@@ -65,14 +65,14 @@
         <visual>
             <origin rpy="${radians(0)} ${radians(90)} ${radians(0)}" xyz="0 0 1.225"/>
             <geometry>
-                <mesh filename="package://motoman_gp180_support/meshes/gp180/visual/link_4_r.stl"/>
+                <mesh filename="package://motoman_gp180_support/meshes/gp180/visual/link_4.stl"/>
             </geometry>
             <xacro:material_yaskawa_blue/>
         </visual>
         <collision>
             <origin rpy="${radians(0)} ${radians(90)} ${radians(0)}" xyz="0 0 1.225"/>
             <geometry>
-                <mesh filename="package://motoman_gp180_support/meshes/gp180/collision/link_4_r.stl"/>
+                <mesh filename="package://motoman_gp180_support/meshes/gp180/collision/link_4.stl"/>
             </geometry>
         </collision>
     </link>
@@ -80,14 +80,14 @@
         <visual>
             <origin rpy="${radians(-90)} ${radians(0)} ${radians(-90)}" />
             <geometry>
-                <mesh filename="package://motoman_gp180_support/meshes/gp180_120/visual/link_5_b.stl"/>
+                <mesh filename="package://motoman_gp180_support/meshes/gp180_120/visual/link_5.stl"/>
             </geometry>
             <xacro:material_yaskawa_blue/>
         </visual>
         <collision>
             <origin rpy="${radians(-90)} ${radians(0)} ${radians(-90)}" />
             <geometry>
-                <mesh filename="package://motoman_gp180_support/meshes/gp180_120/collision/link_5_b.stl"/>
+                <mesh filename="package://motoman_gp180_support/meshes/gp180_120/collision/link_5.stl"/>
             </geometry>
         </collision>
     </link>
@@ -95,14 +95,14 @@
         <visual>
             <origin rpy="${radians(0)} ${radians(90)} ${radians(0)}" />
             <geometry>
-                <mesh filename="package://motoman_gp180_support/meshes/gp180_120/visual/link_6_t.stl"/>
+                <mesh filename="package://motoman_gp180_support/meshes/gp180_120/visual/link_6.stl"/>
             </geometry>
             <xacro:material_yaskawa_blue/>
         </visual>
         <collision>
             <origin rpy="${radians(0)} ${radians(90)} ${radians(0)}" />
             <geometry>
-                <mesh filename="package://motoman_gp180_support/meshes/gp180_120/collision/link_6_t.stl"/>
+                <mesh filename="package://motoman_gp180_support/meshes/gp180_120/collision/link_6.stl"/>
             </geometry>
         </collision>
     </link>

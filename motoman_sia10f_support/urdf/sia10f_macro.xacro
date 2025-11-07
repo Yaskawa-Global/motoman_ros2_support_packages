@@ -7,13 +7,13 @@
         <link name="${prefix}base_link">
             <visual>
                 <geometry>
-                    <mesh filename="package://motoman_sia10f_support/meshes/sia10f/visual/motoman_base.stl" />
+                    <mesh filename="package://motoman_sia10f_support/meshes/sia10f/visual/base_link.stl" />
                 </geometry>
                 <xacro:material_yaskawa_blue/>
             </visual>
             <collision>
                 <geometry>
-                    <mesh filename="package://motoman_sia10f_support/meshes/sia10f/collision/motoman_base.stl" />
+                    <mesh filename="package://motoman_sia10f_support/meshes/sia10f/collision/base_link.stl" />
                 </geometry>
                 <material name="yellow">
                     <color rgba="0 1 1 1"/>
@@ -23,13 +23,13 @@
         <link name="${prefix}link_1_s">
             <visual>
                 <geometry>
-                    <mesh filename="package://motoman_sia10f_support/meshes/sia10f/visual/motoman_axis_s.stl"/>
+                    <mesh filename="package://motoman_sia10f_support/meshes/sia10f/visual/link_1.stl"/>
                 </geometry>
                 <xacro:material_yaskawa_white/>
             </visual>
             <collision>
                 <geometry>
-                    <mesh filename="package://motoman_sia10f_support/meshes/sia10f/collision/motoman_axis_s.stl" />
+                    <mesh filename="package://motoman_sia10f_support/meshes/sia10f/collision/link_1.stl" />
                 </geometry>
                 <material name="yellow"/>
             </collision>
@@ -38,14 +38,14 @@
             <visual>
                 <origin rpy="1.57 3.1416 0" xyz="0 0 0"/>
                 <geometry>
-                    <mesh filename="package://motoman_sia10f_support/meshes/sia10f/visual/motoman_axis_l.stl"/>
+                    <mesh filename="package://motoman_sia10f_support/meshes/sia10f/visual/link_2.stl"/>
                 </geometry>
                 <xacro:material_yaskawa_blue/>
             </visual>
             <collision>
                 <origin rpy="1.57 3.1416 0" xyz="0 0 0"/>
                 <geometry>
-                    <mesh filename="package://motoman_sia10f_support/meshes/sia10f/collision/motoman_axis_l.stl" />
+                    <mesh filename="package://motoman_sia10f_support/meshes/sia10f/collision/link_2.stl" />
                 </geometry>
                 <material name="yellow"/>
             </collision>
@@ -54,14 +54,14 @@
             <visual>
                 <origin rpy="0 0 3.1415" xyz="0 0 0"/>
                 <geometry>
-                    <mesh filename="package://motoman_sia10f_support/meshes/sia10f/visual/motoman_axis_e.stl"/>
+                    <mesh filename="package://motoman_sia10f_support/meshes/sia10f/visual/link_3.stl"/>
                 </geometry>
                 <xacro:material_yaskawa_white/>
             </visual>
             <collision>
                 <origin rpy="0 0 3.1415" xyz="0 0 0"/>
                 <geometry>
-                    <mesh filename="package://motoman_sia10f_support/meshes/sia10f/collision/motoman_axis_e.stl" />
+                    <mesh filename="package://motoman_sia10f_support/meshes/sia10f/collision/link_3.stl" />
                 </geometry>
                 <material name="yellow"/>
             </collision>
@@ -70,14 +70,14 @@
             <visual>
                 <origin rpy="1.57 -3.1415 0" xyz="0 0 0"/>
                 <geometry>
-                    <mesh filename="package://motoman_sia10f_support/meshes/sia10f/visual/motoman_axis_u.stl"/>
+                    <mesh filename="package://motoman_sia10f_support/meshes/sia10f/visual/link_4.stl"/>
                 </geometry>
                 <xacro:material_yaskawa_blue/>
             </visual>
             <collision>
                 <origin rpy="1.57 -3.1415 0" xyz="0 0 0"/>
                 <geometry>
-                    <mesh filename="package://motoman_sia10f_support/meshes/sia10f/collision/motoman_axis_u.stl" />
+                    <mesh filename="package://motoman_sia10f_support/meshes/sia10f/collision/link_4.stl" />
                 </geometry>
                 <material name="yellow"/>
             </collision>
@@ -86,14 +86,14 @@
             <visual>
                 <origin rpy="0 0 3.1416" xyz="0 0 0"/>
                 <geometry>
-                    <mesh filename="package://motoman_sia10f_support/meshes/sia10f/visual/motoman_axis_r.stl"/>
+                    <mesh filename="package://motoman_sia10f_support/meshes/sia10f/visual/link_5.stl"/>
                 </geometry>
                 <xacro:material_yaskawa_white/>
             </visual>
             <collision>
                 <origin rpy="0 0 3.1416" xyz="0 0 0"/>
                 <geometry>
-                    <mesh filename="package://motoman_sia10f_support/meshes/sia10f/collision/motoman_axis_r.stl" />
+                    <mesh filename="package://motoman_sia10f_support/meshes/sia10f/collision/link_5.stl" />
                 </geometry>
                 <material name="yellow"/>
             </collision>
@@ -102,14 +102,14 @@
             <visual>
                 <origin rpy="-1.57 0 3.1416" xyz="0 0 0"/>
                 <geometry>
-                    <mesh filename="package://motoman_sia10f_support/meshes/sia10f/visual/motoman_axis_b.stl"/>
+                    <mesh filename="package://motoman_sia10f_support/meshes/sia10f/visual/link_6.stl"/>
                 </geometry>
                 <xacro:material_yaskawa_blue/>
             </visual>
             <collision>
                 <origin rpy="-1.57 0 3.1416" xyz="0 0 0"/>
                 <geometry>
-                    <mesh filename="package://motoman_sia10f_support/meshes/sia10f/collision/motoman_axis_b.stl" />
+                    <mesh filename="package://motoman_sia10f_support/meshes/sia10f/collision/link_6.stl" />
                 </geometry>
                 <material name="yellow"/>
             </collision>
@@ -117,13 +117,13 @@
         <link name="${prefix}link_7_t">
             <visual>
                 <geometry>
-                    <mesh filename="package://motoman_sia10f_support/meshes/sia10f/visual/motoman_axis_t.stl" />
+                    <mesh filename="package://motoman_sia10f_support/meshes/sia10f/visual/link_7.stl" />
                 </geometry>
                 <xacro:material_yaskawa_white/>
             </visual>
             <collision>
                 <geometry>
-                    <mesh filename="package://motoman_sia10f_support/meshes/sia10f/collision/motoman_axis_t.stl" />
+                    <mesh filename="package://motoman_sia10f_support/meshes/sia10f/collision/link_7.stl" />
                 </geometry>
                 <material name="yellow"/>
             </collision>

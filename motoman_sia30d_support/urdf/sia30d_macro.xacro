@@ -20,91 +20,91 @@
     <link name="${prefix}link_1_s">
       <visual>
         <geometry>
-          <mesh filename="package://motoman_sia30d_support/meshes/visual/link_1_s.stl"/>
+          <mesh filename="package://motoman_sia30d_support/meshes/visual/link_1.stl"/>
         </geometry>
         <xacro:material_yaskawa_silver/>
       </visual>
       <collision>
         <geometry>
-          <mesh filename="package://motoman_sia30d_support/meshes/collision/link_1_s.stl"/>
+          <mesh filename="package://motoman_sia30d_support/meshes/collision/link_1.stl"/>
         </geometry>
       </collision>
     </link>
     <link name="${prefix}link_2_l">
       <visual>
         <geometry>
-          <mesh filename="package://motoman_sia30d_support/meshes/visual/link_2_l.stl"/>
+          <mesh filename="package://motoman_sia30d_support/meshes/visual/link_2.stl"/>
         </geometry>
         <xacro:material_yaskawa_blue/>
       </visual>
       <collision>
         <geometry>
-          <mesh filename="package://motoman_sia30d_support/meshes/collision/link_2_l.stl"/>
+          <mesh filename="package://motoman_sia30d_support/meshes/collision/link_2.stl"/>
         </geometry>
       </collision>
     </link>
     <link name="${prefix}link_3_e">
       <visual>
         <geometry>
-          <mesh filename="package://motoman_sia30d_support/meshes/visual/link_3_e.stl"/>
+          <mesh filename="package://motoman_sia30d_support/meshes/visual/link_3.stl"/>
         </geometry>
         <xacro:material_yaskawa_silver/>
       </visual>
       <collision>
         <geometry>
-          <mesh filename="package://motoman_sia30d_support/meshes/collision/link_3_e.stl"/>
+          <mesh filename="package://motoman_sia30d_support/meshes/collision/link_3.stl"/>
         </geometry>
       </collision>
     </link>
     <link name="${prefix}link_4_u">
       <visual>
         <geometry>
-          <mesh filename="package://motoman_sia30d_support/meshes/visual/link_4_u.stl"/>
+          <mesh filename="package://motoman_sia30d_support/meshes/visual/link_4.stl"/>
         </geometry>
         <xacro:material_yaskawa_blue/>
       </visual>
       <collision>
         <geometry>
-          <mesh filename="package://motoman_sia30d_support/meshes/collision/link_4_u.stl"/>
+          <mesh filename="package://motoman_sia30d_support/meshes/collision/link_4.stl"/>
         </geometry>
       </collision>
     </link>
     <link name="${prefix}link_5_r">
       <visual>
         <geometry>
-          <mesh filename="package://motoman_sia30d_support/meshes/visual/link_5_r.stl"/>
+          <mesh filename="package://motoman_sia30d_support/meshes/visual/link_5.stl"/>
         </geometry>
         <xacro:material_yaskawa_silver/>
       </visual>
       <collision>
         <geometry>
-          <mesh filename="package://motoman_sia30d_support/meshes/collision/link_5_r.stl"/>
+          <mesh filename="package://motoman_sia30d_support/meshes/collision/link_5.stl"/>
         </geometry>
       </collision>
     </link>
     <link name="${prefix}link_6_b">
       <visual>
         <geometry>
-          <mesh filename="package://motoman_sia30d_support/meshes/visual/link_6_b.stl"/>
+          <mesh filename="package://motoman_sia30d_support/meshes/visual/link_6.stl"/>
         </geometry>
         <xacro:material_yaskawa_blue/>
       </visual>
       <collision>
         <geometry>
-          <mesh filename="package://motoman_sia30d_support/meshes/collision/link_6_b.stl"/>
+          <mesh filename="package://motoman_sia30d_support/meshes/collision/link_6.stl"/>
         </geometry>
       </collision>
     </link>
     <link name="${prefix}link_7_t">
       <visual>
         <geometry>
-          <mesh filename="package://motoman_sia30d_support/meshes/visual/link_7_t.stl"/>
+          <mesh filename="package://motoman_sia30d_support/meshes/visual/link_7.stl"/>
         </geometry>
         <xacro:material_yaskawa_silver/>
       </visual>
       <collision>
         <geometry>
-          <mesh filename="package://motoman_sia30d_support/meshes/collision/link_7_t.stl"/>
+          <mesh filename="package://motoman_sia30d_support/meshes/collision/link_7.stl"/>
         </geometry>
       </collision>
     </link>

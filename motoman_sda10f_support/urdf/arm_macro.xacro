@@ -5,14 +5,14 @@
       <visual>
         <origin rpy="0 0 0" xyz="0 0 0"/>
         <geometry>
-          <mesh filename="package://motoman_sda10f_support/meshes/sda10f/visual/link_s.stl"/>
+          <mesh filename="package://motoman_sda10f_support/meshes/sda10f/visual/link_2.stl"/>
         </geometry>
         <xacro:material_yaskawa_blue/>
       </visual>
       <collision>
         <origin rpy="0 0 0" xyz="0 0 0"/>
         <geometry>
-          <mesh filename="package://motoman_sda10f_support/meshes/sda10f/collision/link_s.stl" />
+          <mesh filename="package://motoman_sda10f_support/meshes/sda10f/collision/link_2.stl" />
         </geometry>
       </collision>
     </link>
@@ -20,14 +20,14 @@
       <visual>
         <origin rpy="0 0 0" xyz="0 0 0"/>
         <geometry>
-          <mesh filename="package://motoman_sda10f_support/meshes/sda10f/visual/link_l.stl"/>
+          <mesh filename="package://motoman_sda10f_support/meshes/sda10f/visual/link_3.stl"/>
         </geometry>
         <xacro:material_yaskawa_white/>
       </visual>
       <collision>
         <origin rpy="0 0 0" xyz="0 0 0"/>
         <geometry>
-          <mesh filename="package://motoman_sda10f_support/meshes/sda10f/collision/link_l.stl"/>
+          <mesh filename="package://motoman_sda10f_support/meshes/sda10f/collision/link_3.stl"/>
         </geometry>
       </collision>
     </link>
@@ -35,14 +35,14 @@
       <visual>
         <origin rpy="0 0 0" xyz="0 0 0"/>
         <geometry>
-          <mesh filename="package://motoman_sda10f_support/meshes/sda10f/visual/link_e.stl"/>
+          <mesh filename="package://motoman_sda10f_support/meshes/sda10f/visual/link_4.stl"/>
         </geometry>
         <xacro:material_yaskawa_blue/>
       </visual>
       <collision>
         <origin rpy="0 0 0" xyz="0 0 0"/>
         <geometry>
-          <mesh filename="package://motoman_sda10f_support/meshes/sda10f/collision/link_e.stl"/>
+          <mesh filename="package://motoman_sda10f_support/meshes/sda10f/collision/link_4.stl"/>
         </geometry>
       </collision>
     </link>
@@ -50,14 +50,14 @@
       <visual>
         <origin rpy="0 0 0" xyz="0 0 0"/>
         <geometry>
-          <mesh filename="package://motoman_sda10f_support/meshes/sda10f/visual/link_u.stl"/>
+          <mesh filename="package://motoman_sda10f_support/meshes/sda10f/visual/link_5.stl"/>
         </geometry>
         <xacro:material_yaskawa_white/>
       </visual>
       <collision>
         <origin rpy="0 0 0" xyz="0 0 0"/>
         <geometry>
-          <mesh filename="package://motoman_sda10f_support/meshes/sda10f/collision/link_u.stl"/>
+          <mesh filename="package://motoman_sda10f_support/meshes/sda10f/collision/link_5.stl"/>
         </geometry>
       </collision>
     </link>
@@ -65,14 +65,14 @@
       <visual>
         <origin rpy="0 0 0" xyz="0 0 0"/>
         <geometry>
-          <mesh filename="package://motoman_sda10f_support/meshes/sda10f/visual/link_r.stl"/>
+          <mesh filename="package://motoman_sda10f_support/meshes/sda10f/visual/link_6.stl"/>
         </geometry>
         <xacro:material_yaskawa_blue/>
       </visual>
       <collision>
         <origin rpy="0 0 0" xyz="0 0 0"/>
         <geometry>
-          <mesh filename="package://motoman_sda10f_support/meshes/sda10f/collision/link_r.stl"/>
+          <mesh filename="package://motoman_sda10f_support/meshes/sda10f/collision/link_6.stl"/>
         </geometry>
       </collision>
     </link>
@@ -80,27 +80,27 @@
       <visual>
         <origin rpy="0 0 0" xyz="0 0 0"/>
         <geometry>
-          <mesh filename="package://motoman_sda10f_support/meshes/sda10f/visual/link_b.stl"/>
+          <mesh filename="package://motoman_sda10f_support/meshes/sda10f/visual/link_7.stl"/>
         </geometry>
         <xacro:material_yaskawa_white/>
       </visual>
       <collision>
         <origin rpy="0 0 0" xyz="0 0 0"/>
         <geometry>
-          <mesh filename="package://motoman_sda10f_support/meshes/sda10f/collision/link_b.stl"/>
+          <mesh filename="package://motoman_sda10f_support/meshes/sda10f/collision/link_7.stl"/>
         </geometry>
       </collision>
     </link>
     <link name="${prefix}link_7_t">
       <visual>
         <geometry>
-          <mesh filename="package://motoman_sda10f_support/meshes/sda10f/visual/link_t.stl" />
+          <mesh filename="package://motoman_sda10f_support/meshes/sda10f/visual/link_8.stl" />
         </geometry>
         <xacro:material_yaskawa_blue/>
       </visual>
       <collision>
         <geometry>
-          <mesh filename="package://motoman_sda10f_support/meshes/sda10f/collision/link_t.stl" />
+          <mesh filename="package://motoman_sda10f_support/meshes/sda10f/collision/link_8.stl" />
         </geometry>
       </collision>
     </link>

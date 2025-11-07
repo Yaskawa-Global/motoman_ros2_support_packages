@@ -25,14 +25,14 @@
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://motoman_es_support/meshes/es/visual/link_s.stl"/>
+          <mesh filename="package://motoman_es_support/meshes/es/visual/link_1.stl"/>
         </geometry>
         <material name="blue"/>
       </visual>
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://motoman_es_support/meshes/es/collision/link_s.stl"/>
+          <mesh filename="package://motoman_es_support/meshes/es/collision/link_1.stl"/>
         </geometry>
         <material name="yellow"/>
       </collision>
@@ -41,14 +41,14 @@
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://motoman_es_support/meshes/es/visual/link_l.stl"/>
+          <mesh filename="package://motoman_es_support/meshes/es/visual/link_2.stl"/>
         </geometry>
         <material name="blue"/>
       </visual>
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://motoman_es_support/meshes/es/collision/link_l.stl"/>
+          <mesh filename="package://motoman_es_support/meshes/es/collision/link_2.stl"/>
         </geometry>
         <material name="yellow"/>
       </collision>
@@ -57,14 +57,14 @@
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://motoman_es_support/meshes/es200_120/visual/link_u.stl"/>
+          <mesh filename="package://motoman_es_support/meshes/es200_120/visual/link_3.stl"/>
         </geometry>
         <material name="blue"/>
       </visual>
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://motoman_es_support/meshes/es200_120/collision/link_u.stl"/>
+          <mesh filename="package://motoman_es_support/meshes/es200_120/collision/link_3.stl"/>
         </geometry>
         <material name="yellow"/>
       </collision>
@@ -73,14 +73,14 @@
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://motoman_es_support/meshes/es200_120/visual/link_r.stl"/>
+          <mesh filename="package://motoman_es_support/meshes/es200_120/visual/link_4.stl"/>
         </geometry>
         <material name="blue"/>
       </visual>
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://motoman_es_support/meshes/es200_120/collision/link_r.stl"/>
+          <mesh filename="package://motoman_es_support/meshes/es200_120/collision/link_4.stl"/>
         </geometry>
         <material name="yellow"/>
       </collision>
@@ -89,14 +89,14 @@
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://motoman_es_support/meshes/es/visual/link_b.stl"/>
+          <mesh filename="package://motoman_es_support/meshes/es/visual/link_5.stl"/>
         </geometry>
         <material name="blue"/>
       </visual>
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://motoman_es_support/meshes/es/collision/link_b.stl"/>
+          <mesh filename="package://motoman_es_support/meshes/es/collision/link_5.stl"/>
         </geometry>
         <material name="yellow"/>
       </collision>
@@ -105,7 +105,7 @@
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://motoman_es_support/meshes/es/visual/link_t.stl"/>
+          <mesh filename="package://motoman_es_support/meshes/es/visual/link_6.stl"/>
         </geometry>
         <material name="black">
           <color rgba="0 0 0 1"/>
@@ -114,7 +114,7 @@
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://motoman_es_support/meshes/es/collision/link_t.stl"/>
+          <mesh filename="package://motoman_es_support/meshes/es/collision/link_6.stl"/>
         </geometry>
         <material name="black"/>
       </collision>
