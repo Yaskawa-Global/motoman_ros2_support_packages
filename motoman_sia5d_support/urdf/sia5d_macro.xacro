@@ -191,7 +191,6 @@
       <parent link="${prefix}base_link"/>
       <child link="${prefix}base"/>
     </joint>
-    </xacro:macro>
 
   <!-- ROS-Industrial 'flange' frame: attachment point for EEF models -->
   <link name="${prefix}flange"/>
@@ -209,5 +208,6 @@
     <child link="${prefix}tool0"/>
   </joint>
 
+  </xacro:macro>
 </robot>
 
