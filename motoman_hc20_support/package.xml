@@ -35,7 +35,7 @@
     </p>
     <p>
       NOTE: the HC30PL is the palletizing variant of the HC20 where the wrist
-      joints ('joint_4_r' and 'joint_5_b') are constrained to orient the flange normal 
+      joints ('joint_4' and 'joint_5') are constrained to orient the flange normal 
       to within +/-15 degrees with respect to the ground plane normal.
       Unfortunately, this limitation can't be modelled using URDF joint limits,
       and must therefore be handled by the motion planner or other process
