@@ -19,10 +19,6 @@
                 </geometry>
                 <xacro:material_yaskawa_yellow/>
             </collision>
-            <inertial>
-                    <mass value="400" />  <!-- Arbitrarily large value, to simulate bolting down in case of absence of fixed joint -->
-                    <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
-                </inertial>
         </link>
 
         <gazebo reference="${prefix}base_link">
@@ -44,11 +40,6 @@
                 </geometry>
                 <xacro:material_yaskawa_yellow/>
             </collision>
-            <inertial>
-                    <mass value="13.746057" />
-                    <inertia ixx="0.070027808" ixy="0.0" ixz="0.0" iyy="0.077808312" iyz="0.0" izz="0.043654657"/>
-                <origin xyz="0.0 0.0046451930 -0.018976267" rpy="0.0 0.0 0.0"/>
-                </inertial>
         </link>
 
         <gazebo reference="${prefix}link_s">
@@ -72,11 +63,6 @@
                 </geometry>
                 <xacro:material_yaskawa_yellow/>
             </collision>
-            <inertial>
-                    <mass value="5.227999" />
-                    <inertia ixx="0.016063413" ixy="0.0" ixz="0.0" iyy="0.10522920" iyz="0.0" izz="0.10250891"/>
-                <origin xyz="0.11422130 0.0 0.018935113" rpy="0.0 0.0 0.0"/>
-                </inertial>
         </link>
 
         <gazebo reference="${prefix}link_l">
@@ -100,11 +86,6 @@
                 </geometry>
                 <xacro:material_yaskawa_yellow/>
             </collision>
-            <inertial>
-                    <mass value="4.7092004" />
-                    <inertia ixx="0.030190273" ixy="0.0" ixz="0.0" iyy="0.030943336" iyz="0.0" izz="0.0096760191"/>
-                <origin xyz="0.0 -0.011901001 -0.036023969" rpy="0.0 0.0 0.0"/>
-                </inertial>
         </link>
 
         <gazebo reference="${prefix}link_e">
@@ -128,11 +109,6 @@
                 </geometry>
                 <xacro:material_yaskawa_yellow/>
             </collision>
-            <inertial>
-                    <mass value="3.1488649" />
-                    <inertia ixx="0.083840132" ixy="0.0" ixz="0.0" iyy="0.0061641860" iyz="0.0" izz="0.083291837"/>
-                <origin xyz="0.0 -0.015659426 0.13525753" rpy="0.0 0.0 0.0"/>
-                </inertial>
         </link>
 
         <gazebo reference="${prefix}link_u">
@@ -156,11 +132,6 @@
                 </geometry>
                 <xacro:material_yaskawa_yellow/>
             </collision>
-            <inertial>
-                    <mass value="3.0270943" />
-                    <inertia ixx="0.017471059" ixy="0.0" ixz="0.0" iyy="0.017175292" iyz="0.0" izz="0.0049008824"/>
-                <origin xyz="0.0 -0.011271807 -0.0416" rpy="0.0 0.0 0.0"/>
-                </inertial>
         </link>
         
         <gazebo reference="${prefix}link_r">
@@ -184,11 +155,6 @@
                 </geometry>
                 <xacro:material_yaskawa_yellow/>
             </collision>
-            <inertial>
-                    <mass value="2.3902999" />
-                    <inertia ixx="0.080" ixy="0.0" ixz="0.0" iyy="0.0038377449" iyz="0.0" izz="0.080"/>
-                <origin xyz="0.0 0.0074364051 0.078721289" rpy="0.0 0.0 0.0"/>
-                </inertial>
         </link>
 
         <gazebo reference="${prefix}link_b">
@@ -210,11 +176,6 @@
                 </geometry>
                 <xacro:material_yaskawa_yellow/>
             </collision>
-            <inertial>
-                    <mass value="0.63670412" />
-                    <inertia ixx="0.00058471221" ixy="0.0" ixz="0.0" iyy="0.0005929671" iyz="0.0" izz="0.001081389"/>
-                <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
-                </inertial>
         </link>
 
         <gazebo reference="${prefix}link_t">
