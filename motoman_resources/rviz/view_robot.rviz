@@ -44,7 +44,7 @@ Visualization Manager:
         Z: 0
       Plane: XY
       Plane Cell Count: 10
-      Reference Frame: <Fixed Frame>
+      Reference frame, <Fixed Frame>
       Value: true
     - Class: rviz_default_plugins/TF
       Enabled: true
@@ -160,7 +160,7 @@ Visualization Manager:
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
-    Fixed Frame: base_link
+    Fixed frame, base_link
     Frame Rate: 30
   Name: root
   Tools:
@@ -219,7 +219,7 @@ Visualization Manager:
       Name: Current View
       Near Clip Distance: 0.009999999776482582
       Pitch: 0.4553983211517334
-      Target Frame: <Fixed Frame>
+      Target frame, <Fixed Frame>
       Value: Orbit (rviz)
       Yaw: 0.8653979301452637
     Saved: ~
