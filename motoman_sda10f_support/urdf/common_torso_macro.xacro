@@ -1,8 +1,8 @@
 <?xml version="1.0" ?>
 <robot xmlns:xacro="http://ros.org/wiki/xacro">
-  <xacro:macro name="torso" params="name prefix">
+  <xacro:macro name="torso" params="name prefix left_base_prefix right_base_prefix">
     <!-- link list -->
-    <link name="${prefix}base_link">
+    <link name="${prefix}torso_base_link">
       <visual>
         <geometry>
           <mesh filename="package://motoman_sda10f_support/meshes/torso/visual/base_link.stl" />
@@ -15,7 +15,7 @@
         </geometry>
       </collision>
     </link>
-    <link name="${prefix}link_b1">
+    <link name="${prefix}${left_base_prefix}base_link">
       <visual>
         <origin rpy="0 0 0" xyz="0 0 0"/>
         <geometry>
@@ -30,23 +30,23 @@
         </geometry>
       </collision>
     </link>
-    <link name="${prefix}link_b2"/>
+    <link name="${prefix}${right_base_prefix}base_link"/>
 
     <!-- joint list -->
-    <joint name="${prefix}joint_b1" type="revolute">
-      <parent link="${prefix}base_link"/>
-      <child link="${prefix}link_b1"/>
+    <joint name="${prefix}${left_base_prefix}joint_1" type="revolute">
+      <parent link="${prefix}torso_base_link"/>
+      <child link="${prefix}${left_base_prefix}base_link"/>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <axis xyz="0 0 1" />
       <limit lower="${radians(-170)}" upper="${radians(170)}" effort="100" velocity="${radians(130)}" />
     </joint>
-    <joint name="${prefix}joint_b2" type="revolute">
-      <parent link="${prefix}base_link"/>
-      <child link="${prefix}link_b2"/>
+    <joint name="${prefix}${right_base_prefix}joint_1" type="revolute">
+      <parent link="${prefix}torso_base_link"/>
+      <child link="${prefix}${right_base_prefix}base_link"/>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <axis xyz="0 0 1" />
       <limit lower="${radians(-170)}" upper="${radians(170)}" effort="100" velocity="${radians(130)}" />
-      <mimic joint="${prefix}joint_b1" multiplier="1" offset="0"/>
+      <mimic joint="${prefix}${left_base_prefix}joint_1" multiplier="1" offset="0"/>
     </joint>
     <!-- end of joint list -->
   </xacro:macro>
