@@ -25,10 +25,4 @@
       <origin xyz="0 0 1.2" rpy="0 0 0"/>
     </joint>
   </xacro:macro>
-
-  <!-- The following xacro is kept for backwards compatibility, it should not be used -->
-  <!-- see: https://github.com/ros-industrial/motoman/issues/166 -->
-  <xacro:macro name="sda10f">
-    <xacro:motoman_sda10f prefix=""/>
-  </xacro:macro>
 </robot>
