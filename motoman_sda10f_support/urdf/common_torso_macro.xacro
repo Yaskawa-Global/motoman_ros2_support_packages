@@ -31,6 +31,8 @@
       </collision>
     </link>
     <link name="${prefix}${right_base_prefix}base_link"/>
+    <link name="${prefix}${left_base_prefix}base"/>
+    <link name="${prefix}${right_base_prefix}base"/>
 
     <!-- joint list -->
     <joint name="${prefix}${left_base_prefix}joint_1" type="revolute">
@@ -47,6 +49,16 @@
       <axis xyz="0 0 1" />
       <limit lower="${radians(-170)}" upper="${radians(170)}" effort="100" velocity="${radians(130)}" />
       <mimic joint="${prefix}${left_base_prefix}joint_1" multiplier="1" offset="0"/>
+    </joint>
+    <joint name="${prefix}${left_base_prefix}base_link-${prefix}${left_base_prefix}base" type="fixed">
+      <parent link="${prefix}${left_base_prefix}base_link"/>
+      <child link="${prefix}${left_base_prefix}base"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+    </joint>
+    <joint name="${prefix}${right_base_prefix}base_link-${prefix}${right_base_prefix}base" type="fixed">
+      <parent link="${prefix}${right_base_prefix}base_link"/>
+      <child link="${prefix}${right_base_prefix}base"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
     </joint>
     <!-- end of joint list -->
   </xacro:macro>
