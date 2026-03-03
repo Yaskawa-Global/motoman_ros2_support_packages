@@ -56,6 +56,11 @@
                 <mesh filename="package://motoman_gp225_support/meshes/gp225/collision/link_3_u.stl"/>
             </geometry>
         </collision>
+        <collision>
+            <geometry>
+                <mesh filename="package://motoman_gp225_support/meshes/gp225/collision/link_3_u_2.stl"/>
+            </geometry>
+        </collision>
     </link>
     <link name="${prefix}link_4_r">
         <visual>
