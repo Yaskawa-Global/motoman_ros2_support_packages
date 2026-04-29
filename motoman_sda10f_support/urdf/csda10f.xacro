@@ -1,5 +1,8 @@
 <?xml version="1.0" ?>
 <robot name="motoman_csda10f" xmlns:xacro="http://ros.org/wiki/xacro">
   <xacro:include filename="$(find motoman_sda10f_support)/urdf/csda10f_macro.xacro" />
-  <xacro:motoman_csda10f prefix=""/>
+  <!-- Plain language description -->
+  <!-- <xacro:motoman_csda10f prefix="" left_arm_prefix="left_arm_" right_arm_prefix="right_arm_" left_base_prefix="left_" right_base_prefix="right_" /> -->
+  <!-- MotoROS2 Default -->
+  <xacro:motoman_csda10f prefix="" left_arm_prefix="group_1/" right_arm_prefix="group_2/" left_base_prefix="group_3/" right_base_prefix="group_4/" />
 </robot>

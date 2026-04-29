@@ -21,91 +21,91 @@
         </material>
       </collision>
     </link>
-    <link name="${prefix}link_s">
+    <link name="${prefix}link_1">
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://motoman_es_support/meshes/es/visual/link_s.stl"/>
+          <mesh filename="package://motoman_es_support/meshes/es/visual/link_1.stl"/>
         </geometry>
         <material name="blue"/>
       </visual>
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://motoman_es_support/meshes/es/collision/link_s.stl"/>
+          <mesh filename="package://motoman_es_support/meshes/es/collision/link_1.stl"/>
         </geometry>
         <material name="yellow"/>
       </collision>
     </link>
-    <link name="${prefix}link_l">
+    <link name="${prefix}link_2">
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://motoman_es_support/meshes/es/visual/link_l.stl"/>
+          <mesh filename="package://motoman_es_support/meshes/es/visual/link_2.stl"/>
         </geometry>
         <material name="blue"/>
       </visual>
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://motoman_es_support/meshes/es/collision/link_l.stl"/>
+          <mesh filename="package://motoman_es_support/meshes/es/collision/link_2.stl"/>
         </geometry>
         <material name="yellow"/>
       </collision>
     </link>
-    <link name="${prefix}link_u">
+    <link name="${prefix}link_3">
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://motoman_es_support/meshes/es/visual/link_u.stl"/>
+          <mesh filename="package://motoman_es_support/meshes/es/visual/link_3.stl"/>
         </geometry>
         <material name="blue"/>
       </visual>
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://motoman_es_support/meshes/es/collision/link_u.stl"/>
+          <mesh filename="package://motoman_es_support/meshes/es/collision/link_3.stl"/>
         </geometry>
         <material name="yellow"/>
       </collision>
     </link>
-    <link name="${prefix}link_r">
+    <link name="${prefix}link_4">
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://motoman_es_support/meshes/es165/visual/link_r.stl"/>
+        <mesh filename="package://motoman_es_support/meshes/es165/visual/link_4.stl"/>
       </geometry>
       <material name="blue"/>
       </visual>
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://motoman_es_support/meshes/es165/collision/link_r.stl"/>
+          <mesh filename="package://motoman_es_support/meshes/es165/collision/link_4.stl"/>
         </geometry>
         <material name="yellow"/>
       </collision>
     </link>
-    <link name="${prefix}link_b">
+    <link name="${prefix}link_5">
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://motoman_es_support/meshes/es/visual/link_b.stl"/>
+          <mesh filename="package://motoman_es_support/meshes/es/visual/link_5.stl"/>
         </geometry>
         <material name="blue"/>
       </visual>
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://motoman_es_support/meshes/es/collision/link_b.stl"/>
+          <mesh filename="package://motoman_es_support/meshes/es/collision/link_5.stl"/>
         </geometry>
         <material name="yellow"/>
       </collision>
     </link>
-    <link name="${prefix}link_t">
+    <link name="${prefix}link_6">
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0"/>
           <geometry>
-            <mesh filename="package://motoman_es_support/meshes/es/visual/link_t.stl"/>
+            <mesh filename="package://motoman_es_support/meshes/es/visual/link_6.stl"/>
           </geometry>
           <material name="black">
             <color rgba="0 0 0 1"/>
@@ -114,7 +114,7 @@
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://motoman_es_support/meshes/es/collision/link_t.stl"/>
+          <mesh filename="package://motoman_es_support/meshes/es/collision/link_6.stl"/>
         </geometry>
         <material name="black"/>
       </collision>
@@ -166,47 +166,47 @@
     <!-- joint list -->
     <xacro:property name="velocities" value="${xacro.load_yaml(joint_velocities_file)}" />
 
-    <joint name="${prefix}joint_1_s" type="revolute">
+    <joint name="${prefix}joint_1" type="revolute">
       <origin xyz="0 0 0.450" rpy="0 0 0"/>
       <parent link="${prefix}base_link"/>
-      <child link="${prefix}link_s"/>
+      <child link="${prefix}link_1"/>
       <axis xyz="0 0 1"/>
-      <limit lower="${radians(-180)}" upper="${radians(180)}" effort="0" velocity="${radians(velocities['joint_1_s'])}"/>
+      <limit lower="${radians(-180)}" upper="${radians(180)}" effort="0" velocity="${radians(velocities['joint_1'])}"/>
     </joint>
-    <joint name="${prefix}joint_2_l" type="revolute">
+    <joint name="${prefix}joint_2" type="revolute">
       <origin xyz="0.740 0 0" rpy="0 0 0"/>
-      <parent link="${prefix}link_s"/>
-      <child link="${prefix}link_l"/>
+      <parent link="${prefix}link_1"/>
+      <child link="${prefix}link_2"/>
       <axis xyz="0 1 0"/>
-      <limit lower="${radians(-130)}" upper="${radians(80)}" effort="0" velocity="${radians(velocities['joint_2_l'])}"/>
+      <limit lower="${radians(-130)}" upper="${radians(80)}" effort="0" velocity="${radians(velocities['joint_2'])}"/>
     </joint>
-    <joint name="${prefix}joint_3_u" type="revolute">
+    <joint name="${prefix}joint_3" type="revolute">
       <origin xyz="1.150 0 0" rpy="0 0 0"/>
-      <parent link="${prefix}link_l"/>
-      <child link="${prefix}link_u"/>
+      <parent link="${prefix}link_2"/>
+      <child link="${prefix}link_3"/>
       <axis xyz="0 -1 0"/>
-      <limit lower="${radians(-112)}" upper="${radians(208)}" effort="0" velocity="${radians(velocities['joint_3_u'])}"/>
+      <limit lower="${radians(-112)}" upper="${radians(208)}" effort="0" velocity="${radians(velocities['joint_3'])}"/>
     </joint>
-    <joint name="${prefix}joint_4_r" type="revolute">
+    <joint name="${prefix}joint_4" type="revolute">
       <origin xyz="0.250 0 0" rpy="0 0 0"/>
-      <parent link="${prefix}link_u"/>
-      <child link="${prefix}link_r"/>
+      <parent link="${prefix}link_3"/>
+      <child link="${prefix}link_4"/>
       <axis xyz="0 0 1"/>
-      <limit lower="${radians(-360)}" upper="${radians(360)}" effort="0" velocity="${radians(velocities['joint_4_r'])}"/>
+      <limit lower="${radians(-360)}" upper="${radians(360)}" effort="0" velocity="${radians(velocities['joint_4'])}"/>
     </joint>
-    <joint name="${prefix}joint_5_b" type="revolute">
+    <joint name="${prefix}joint_5" type="revolute">
       <origin xyz="0 0 -1.225" rpy="0 0 0"/>
-      <parent link="${prefix}link_r"/>
-      <child link="${prefix}link_b"/>
+      <parent link="${prefix}link_4"/>
+      <child link="${prefix}link_5"/>
       <axis xyz="0 -1 0"/>
-      <limit lower="${radians(-130)}" upper="${radians(130)}" effort="0" velocity="${radians(velocities['joint_5_b'])}"/>
+      <limit lower="${radians(-130)}" upper="${radians(130)}" effort="0" velocity="${radians(velocities['joint_5'])}"/>
     </joint>
-    <joint name="${prefix}joint_6_t" type="revolute">
+    <joint name="${prefix}joint_6" type="revolute">
       <origin xyz="0 0 -0.225" rpy="0 0 0"/>
-      <parent link="${prefix}link_b"/>
-      <child link="${prefix}link_t"/>
+      <parent link="${prefix}link_5"/>
+      <child link="${prefix}link_6"/>
       <axis xyz="0 0 1"/>
-      <limit lower="${radians(-360)}" upper="${radians(360)}" effort="0" velocity="${radians(velocities['joint_6_t'])}"/>
+      <limit lower="${radians(-360)}" upper="${radians(360)}" effort="0" velocity="${radians(velocities['joint_6'])}"/>
     </joint>
 
     <!--
@@ -215,12 +215,12 @@
 
     <joint name="${prefix}joint_balancer_piston" type="fixed">
       <origin xyz="-0.260 0 0.320" rpy="0 0 0"/>
-      <parent link="${prefix}link_s"/>
+      <parent link="${prefix}link_1"/>
       <child link="${prefix}balancer_piston"/>
     </joint>
     <joint name="${prefix}joint_balancer_rod" type="fixed">
       <origin xyz="${0.740 + 0.220 * cos(radians(55))} 0 ${0.220 * sin(radians(55))}" rpy="0 0 0"/>
-      <parent link="${prefix}link_s"/>
+      <parent link="${prefix}link_1"/>
       <child link="${prefix}balancer_rod"/>
     </joint>
     -->
@@ -236,9 +236,9 @@
 
     <!-- ROS-Industrial 'flange' frame: attachment point for EEF models -->
     <link name="${prefix}flange"/>
-    <joint name="${prefix}link_t-flange" type="fixed">
+    <joint name="${prefix}joint_6-flange" type="fixed">
       <origin xyz="0 0 0" rpy="0 ${radians(90)} 0"/>
-      <parent link="${prefix}link_t"/>
+      <parent link="${prefix}link_6"/>
       <child link="${prefix}flange"/>
     </joint>
 

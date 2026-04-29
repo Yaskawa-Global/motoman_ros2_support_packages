@@ -1,162 +1,162 @@
 <?xml version="1.0" ?>
 <robot xmlns:xacro="http://ros.org/wiki/xacro">
   <xacro:macro name="csda10f_motoman_arm" params="name prefix parent *origin reflect">
-    <link name="${prefix}link_1_s">
+    <link name="${prefix}link_1">
       <visual>
         <origin rpy="0 0 0" xyz="0 0 0"/>
         <geometry>
-          <mesh filename="package://motoman_sda10f_support/meshes/sda10f/visual/link_s.stl"/>
+          <mesh filename="package://motoman_sda10f_support/meshes/sda10f/visual/link_1.stl"/>
         </geometry>
         <xacro:material_yaskawa_blue/>
       </visual>
       <collision>
         <origin rpy="0 0 0" xyz="0 0 0"/>
         <geometry>
-          <mesh filename="package://motoman_sda10f_support/meshes/sda10f/collision/link_s.stl" />
+          <mesh filename="package://motoman_sda10f_support/meshes/sda10f/collision/link_1.stl" />
         </geometry>
       </collision>
     </link>
-    <link name="${prefix}link_2_l">
+    <link name="${prefix}link_2">
       <visual>
         <origin rpy="0 0 0" xyz="0 0 0"/>
         <geometry>
-          <mesh filename="package://motoman_sda10f_support/meshes/sda10f/visual/link_l.stl"/>
+          <mesh filename="package://motoman_sda10f_support/meshes/sda10f/visual/link_2.stl"/>
         </geometry>
         <xacro:material_yaskawa_white/>
       </visual>
       <collision>
         <origin rpy="0 0 0" xyz="0 0 0"/>
         <geometry>
-          <mesh filename="package://motoman_sda10f_support/meshes/sda10f/collision/link_l.stl"/>
+          <mesh filename="package://motoman_sda10f_support/meshes/sda10f/collision/link_2.stl"/>
         </geometry>
       </collision>
     </link>
-    <link name="${prefix}link_3_e">
+    <link name="${prefix}link_3">
       <visual>
         <origin rpy="0 0 0" xyz="0 0 0"/>
         <geometry>
-          <mesh filename="package://motoman_sda10f_support/meshes/sda10f/visual/link_e.stl"/>
+          <mesh filename="package://motoman_sda10f_support/meshes/sda10f/visual/link_3.stl"/>
         </geometry>
         <xacro:material_yaskawa_blue/>
       </visual>
       <collision>
         <origin rpy="0 0 0" xyz="0 0 0"/>
         <geometry>
-          <mesh filename="package://motoman_sda10f_support/meshes/sda10f/collision/link_e.stl"/>
+          <mesh filename="package://motoman_sda10f_support/meshes/sda10f/collision/link_3.stl"/>
         </geometry>
       </collision>
     </link>
-    <link name="${prefix}link_4_u">
+    <link name="${prefix}link_4">
       <visual>
         <origin rpy="0 0 0" xyz="0 0 0"/>
         <geometry>
-          <mesh filename="package://motoman_sda10f_support/meshes/sda10f/visual/link_u.stl"/>
+          <mesh filename="package://motoman_sda10f_support/meshes/sda10f/visual/link_4.stl"/>
         </geometry>
         <xacro:material_yaskawa_white/>
       </visual>
       <collision>
         <origin rpy="0 0 0" xyz="0 0 0"/>
         <geometry>
-          <mesh filename="package://motoman_sda10f_support/meshes/sda10f/collision/link_u.stl"/>
+          <mesh filename="package://motoman_sda10f_support/meshes/sda10f/collision/link_4.stl"/>
         </geometry>
       </collision>
     </link>
-    <link name="${prefix}link_5_r">
+    <link name="${prefix}link_5">
       <visual>
         <origin rpy="0 0 0" xyz="0 0 0"/>
         <geometry>
-          <mesh filename="package://motoman_sda10f_support/meshes/sda10f/visual/link_r.stl"/>
+          <mesh filename="package://motoman_sda10f_support/meshes/sda10f/visual/link_5.stl"/>
         </geometry>
         <xacro:material_yaskawa_blue/>
       </visual>
       <collision>
         <origin rpy="0 0 0" xyz="0 0 0"/>
         <geometry>
-          <mesh filename="package://motoman_sda10f_support/meshes/sda10f/collision/link_r.stl"/>
+          <mesh filename="package://motoman_sda10f_support/meshes/sda10f/collision/link_5.stl"/>
         </geometry>
       </collision>
     </link>
-    <link name="${prefix}link_6_b">
+    <link name="${prefix}link_6">
       <visual>
         <origin rpy="0 0 0" xyz="0 0 0"/>
         <geometry>
-          <mesh filename="package://motoman_sda10f_support/meshes/sda10f/visual/link_b.stl"/>
+          <mesh filename="package://motoman_sda10f_support/meshes/sda10f/visual/link_6.stl"/>
         </geometry>
         <xacro:material_yaskawa_white/>
       </visual>
       <collision>
         <origin rpy="0 0 0" xyz="0 0 0"/>
         <geometry>
-          <mesh filename="package://motoman_sda10f_support/meshes/sda10f/collision/link_b.stl"/>
+          <mesh filename="package://motoman_sda10f_support/meshes/sda10f/collision/link_6.stl"/>
         </geometry>
       </collision>
     </link>
-    <link name="${prefix}link_7_t">
+    <link name="${prefix}link_7">
       <visual>
         <geometry>
-          <mesh filename="package://motoman_sda10f_support/meshes/csda10f/visual/link_t.stl" />
+          <mesh filename="package://motoman_sda10f_support/meshes/csda10f/visual/link_7.stl" />
         </geometry>
         <xacro:material_yaskawa_blue/>
       </visual>
       <collision>
         <geometry>
-          <mesh filename="package://motoman_sda10f_support/meshes/csda10f/collision/link_t.stl" />
+          <mesh filename="package://motoman_sda10f_support/meshes/csda10f/collision/link_7.stl" />
         </geometry>
       </collision>
     </link>
     <link name="${prefix}tool0" />
 
-    <joint name="${prefix}joint_1_s" type="revolute">
+    <joint name="${prefix}joint_1" type="revolute">
       <parent link="${parent}"/>
-      <child link="${prefix}link_1_s"/>
+      <child link="${prefix}link_1"/>
       <origin xyz="0.100 ${reflect*0.265} 0.0" rpy="${radians(90)} 0.0 ${(reflect-1)*radians(90)}"/>
       <axis xyz="0 0 ${-reflect}" />
       <limit lower="${radians(-170)}" upper="${radians(170)}" effort="268.36" velocity="${radians(170)}" />
     </joint>
-    <joint name="${prefix}joint_2_l" type="revolute">
-      <parent link="${prefix}link_1_s"/>
-      <child link="${prefix}link_2_l"/>
+    <joint name="${prefix}joint_2" type="revolute">
+      <parent link="${prefix}link_1"/>
+      <child link="${prefix}link_2"/>
       <origin xyz="0.0 0.0 0.0" rpy="${radians(-90)} 0.0 0.0"/>
       <axis xyz="0 0 ${-reflect}" />
       <limit lower="${radians(-110)}" upper="${radians(110)}" effort="268.36" velocity="${radians(170)}" />
     </joint>
-    <joint name="${prefix}joint_3_e" type="revolute">
-      <parent link="${prefix}link_2_l"/>
-      <child link="${prefix}link_3_e"/>
+    <joint name="${prefix}joint_3" type="revolute">
+      <parent link="${prefix}link_2"/>
+      <child link="${prefix}link_3"/>
       <origin xyz="0.0 0.360 0.0" rpy="${radians(90)} 0.0 0.0"/>
       <axis xyz="0 0 ${-reflect}" />
       <limit lower="${radians(-170)}" upper="${radians(170)}" effort="122.89" velocity="${radians(170)}" />
     </joint>
-    <joint name="${prefix}joint_4_u" type="revolute">
-      <parent link="${prefix}link_3_e"/>
-      <child link="${prefix}link_4_u"/>
+    <joint name="${prefix}joint_4" type="revolute">
+      <parent link="${prefix}link_3"/>
+      <child link="${prefix}link_4"/>
       <origin xyz="0.0 0.0 0.0" rpy="${radians(-90)} 0.0 0.0"/>
       <axis xyz="0 0 ${reflect}" />
       <limit lower="${radians(-135)}" upper="${radians(135)}" effort="122.89" velocity="${radians(170)}" />
     </joint>
-    <joint name="${prefix}joint_5_r" type="revolute">
-      <parent link="${prefix}link_4_u"/>
-      <child link="${prefix}link_5_r"/>
+    <joint name="${prefix}joint_5" type="revolute">
+      <parent link="${prefix}link_4"/>
+      <child link="${prefix}link_5"/>
       <origin xyz="0.0 0.360 0.0" rpy="${radians(90)} 0.0 0.0"/>
       <axis xyz="0 0 ${reflect}" />
       <limit lower="${radians(-180)}" upper="${radians(180)}" effort="44.34" velocity="${radians(200)}" />
     </joint>
-    <joint name="${prefix}joint_6_b" type="revolute">
-      <parent link="${prefix}link_5_r"/>
-      <child link="${prefix}link_6_b"/>
+    <joint name="${prefix}joint_6" type="revolute">
+      <parent link="${prefix}link_5"/>
+      <child link="${prefix}link_6"/>
       <origin xyz="0.0 0.0 0.0" rpy="${radians(-90)} 0.0 0.0"/>
       <axis xyz="0 0 ${reflect}" />
       <limit lower="${radians(-110)}" upper="${radians(110)}" effort="44.34" velocity="${radians(200)}" />
     </joint>
-    <joint name="${prefix}joint_7_t" type="revolute">
-      <parent link="${prefix}link_6_b"/>
-      <child link="${prefix}link_7_t"/>
+    <joint name="${prefix}joint_7" type="revolute">
+      <parent link="${prefix}link_6"/>
+      <child link="${prefix}link_7"/>
       <origin xyz="0.0 0.175 0.0" rpy="${radians(-90)} 0.0 0.0"/>
       <axis xyz="0 0 ${-reflect}" />
       <limit lower="${radians(-180)}" upper="${radians(180)}" effort="39.04" velocity="${radians(400)}" />
     </joint>
-    <joint name="${prefix}joint_tool0" type="fixed" >
-      <parent link="${prefix}link_7_t" />
+    <joint name="${prefix}joint_7-tool0" type="fixed" >
+      <parent link="${prefix}link_7" />
       <child link="${prefix}tool0" />
       <origin xyz="0 0 0" rpy="0 0 ${radians(180)}"/>
     </joint>
