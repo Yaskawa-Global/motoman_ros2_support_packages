@@ -57,7 +57,7 @@
       <axis xyz="1 0 0"/>
       <!-- NOTE: the velocity limit is a conservative conversion from the stated
            limit in the manual: 10.8 rpm (in section 3.2.1) -->
-      <limit lower="${-2*pi}" upper="${2*pi}" effort="1274" velocity="1.1309"/>
+      <limit lower="${radians(-360)}" upper="${radians(360)}" effort="1274" velocity="${radians(65)}"/>
     </joint>
     <!-- end of joint list -->
 
@@ -80,7 +80,7 @@
     <!-- ROS-Industrial 'tool0' frame: all-zeros tool frame -->
     <link name="${prefix}tool0"/>
     <joint name="${prefix}flange-tool0" type="fixed">
-      <origin xyz="0 0 0" rpy="${pi} ${-pi/2} 0"/>
+      <origin xyz="0 0 0" rpy="${radians(180)} ${radians(-90)} 0"/>
       <parent link="${prefix}flange"/>
       <child link="${prefix}tool0"/>
     </joint>
