@@ -103,42 +103,42 @@
     <child link="${prefix}link_1"/>
     <origin xyz="0 0 0.103" rpy="0 0 0" />
     <axis xyz="0 0 1" />
-    <limit lower="${radians(-170)}" upper="${radians(170)}" effort="0.12" velocity="${radians(315)}"/>
+    <limit lower="${radians(-170)}" upper="${radians(170)}" effort="18.40" velocity="${radians(315)}"/>
   </joint>
   <joint name="${prefix}joint_2" type="revolute">
     <parent link="${prefix}link_1"/>
     <child link="${prefix}link_2"/>
     <origin xyz="0.020 0 0" rpy="0 0 0" />
     <axis xyz="0 1 0" />
-    <limit lower="${radians(-85)}" upper="${radians(90)}" effort="0.12" velocity="${radians(315)}"/>
+    <limit lower="${radians(-85)}" upper="${radians(90)}" effort="18.40" velocity="${radians(315)}"/>
   </joint>
   <joint name="${prefix}joint_3" type="revolute">
     <parent link="${prefix}link_2"/>
     <child link="${prefix}link_3"/>
     <origin xyz="0 0 0.165" rpy="0 0 0" />
     <axis xyz="0 -1 0" />
-    <limit lower="${radians(-50)}" upper="${radians(90)}" effort="0.12" velocity="${radians(420)}"/>
+    <limit lower="${radians(-50)}" upper="${radians(90)}" effort="6.64" velocity="${radians(420)}"/>
   </joint>
   <joint name="${prefix}joint_4" type="revolute">
     <parent link="${prefix}link_3"/>
     <child link="${prefix}link_4"/>
     <origin xyz="0.165 0 0" rpy="0 0 0" />
     <axis xyz="-1 0 0" />
-    <limit lower="${radians(-140)}" upper="${radians(140)}" effort="0.07" velocity="${radians(600)}"/>
+    <limit lower="${radians(-140)}" upper="${radians(140)}" effort="1.80" velocity="${radians(600)}"/>
   </joint>
   <joint name="${prefix}joint_5" type="revolute">
     <parent link="${prefix}link_4"/>
     <child link="${prefix}link_5"/>
     <origin xyz="0 0 0" rpy="0 0 0" />
     <axis xyz="0 -1 0" />
-    <limit lower="${radians(-30)}" upper="${radians(210)}" effort="0.07" velocity="${radians(600)}"/>
+    <limit lower="${radians(-30)}" upper="${radians(210)}" effort="1.80" velocity="${radians(600)}"/>
   </joint>
   <joint name="${prefix}joint_6" type="revolute">
     <parent link="${prefix}link_5"/>
     <child link="${prefix}link_6"/>
     <origin xyz="0 0 0" rpy="0 0 0" />
     <axis xyz="0 0 1" />
-    <limit lower="${radians(-360)}" upper="${radians(360)}" effort="0.07" velocity="${radians(600)}"/>
+    <limit lower="${radians(-360)}" upper="${radians(360)}" effort="1.44" velocity="${radians(600)}"/>
   </joint>
     <!-- end of joint list -->
 

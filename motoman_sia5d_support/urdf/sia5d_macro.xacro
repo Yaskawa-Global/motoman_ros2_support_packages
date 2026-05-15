@@ -40,7 +40,7 @@
     <parent link="${prefix}base_link" />
     <child link="${prefix}link_1" />
     <axis xyz="0 0 1" />
-    <limit lower="${radians(-180)}" upper="${radians(180)}" effort="0" velocity="${radians(200)}" />
+    <limit lower="${radians(-180)}" upper="${radians(180)}" effort="129.36" velocity="${radians(200)}" />
   </joint>
 
   <link name="${prefix}link_2">
@@ -63,7 +63,7 @@
     <parent link="${prefix}link_1" />
     <child link="${prefix}link_2" />
     <axis xyz="0 1 0" />
-    <limit lower="${radians(-110)}" upper="${radians(110)}" effort="0" velocity="${radians(200)}" />
+    <limit lower="${radians(-110)}" upper="${radians(110)}" effort="129.36" velocity="${radians(200)}" />
   </joint>
 
   <link name="${prefix}link_3">
@@ -86,7 +86,7 @@
     <parent link="${prefix}link_2" />
     <child link="${prefix}link_3" />
     <axis xyz="0 0 1" />
-    <limit lower="${radians(-170)}" upper="${radians(170)}" effort="0" velocity="${radians(200)}" />
+    <limit lower="${radians(-170)}" upper="${radians(170)}" effort="129.36" velocity="${radians(200)}" />
   </joint>
   
   <link name="${prefix}link_4">
@@ -109,7 +109,7 @@
     <parent link="${prefix}link_3" />
     <child link="${prefix}link_4" />
     <axis xyz="0 -1 0" />
-    <limit lower="${radians(-90)}" upper="${radians(115)}" effort="0" velocity="${radians(200)}" />
+    <limit lower="${radians(-90)}" upper="${radians(115)}" effort="85.26" velocity="${radians(200)}" />
   </joint>
 
   <link name="${prefix}link_5">
@@ -132,7 +132,7 @@
     <parent link="${prefix}link_4" />
     <child link="${prefix}link_5" />
     <axis xyz="-1 0 0" />
-    <limit lower="${radians(-90)}" upper="${radians(90)}" effort="0" velocity="${radians(200)}" />
+    <limit lower="${radians(-180)}" upper="${radians(180)}" effort="77.08" velocity="${radians(200)}" />
   </joint>
 
   <link name="${prefix}link_6">
@@ -155,7 +155,7 @@
     <parent link="${prefix}link_5" />
     <child link="${prefix}link_6" />
     <axis xyz="0 -1 0" />
-    <limit lower="${radians(-110)}" upper="${radians(110)}" effort="0" velocity="${radians(230)}" />
+    <limit lower="${radians(-110)}" upper="${radians(110)}" effort="38.44" velocity="${radians(230)}" />
   </joint>
 
   <link name="${prefix}link_7">
@@ -178,7 +178,7 @@
     <parent link="${prefix}link_6" />
     <child link="${prefix}link_7" />
     <axis xyz="-1 0 0" />
-    <limit lower="${radians(-90)}" upper="${radians(90)}" effort="0" velocity="${radians(350)}" />
+    <limit lower="${radians(-180)}" upper="${radians(180)}" effort="72.52" velocity="${radians(350)}" />
   </joint>
   <!-- end of joint list -->
   
