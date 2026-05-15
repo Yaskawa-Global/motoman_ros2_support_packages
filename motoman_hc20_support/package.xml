@@ -46,6 +46,9 @@
       Failure to take this constraint into account will cause the Yaskawa robot
       controller to abort trajectory execution and to raise alarms on the Teach
       Pendant.
+      Additionally, the speed and joint limits of the robot explicitly vary depending on
+      the payload. This URDF assumes no payload, i.e. max speed and joint limits. See
+      the manual for more details.
     </p>
     <p>
       Before using any of the configuration files and / or meshes included
