@@ -20,13 +20,19 @@
    </ul>
     <p>
       Joint limits and maximum joint velocities are based on the information
-      found in: <em>YASKAWA MOTOMAN-HC20DT INSTRUCTIONS (HW1486129)</em>
-      version <em>190085-1CD, rev 1</em>,
-      <em>YASKAWA MOTOMAN-HC20DTP INSTRUCTIONS (HW2480394)</em> version
-      <em>193888-1CD, rev 3</em> and
-      <em>YASKAWA MOTOMAN-HC30PL INSTRUCTIONS (HW2480886)</em> version
-      <em>196230-1CD, rev 2</em>.
+      found in:
     </p>
+    <ul>
+      <li><em>MOTOMAN-HC20DT INSTRUCTIONS DUST-PROOF/DRIP-PROOF SPECIFICATION (HW1486129)</em> version
+        <em>190085-1CD, rev 4</em>.
+      </li>
+      <li><em>MOTOMAN-HC20DTP INSTRUCTIONS DUST-PROOF/DRIP-PROOF SPECIFICATION (HW2480394)</em> version
+        <em>193888-1CD, rev 6</em>.
+      </li>
+      <li><em>MOTOMAN-HC30PL INSTRUCTIONS DUST-PROOF/DRIP-PROOF SPECIFICATION (HW2480886)</em> version
+        <em>196230-1CD, rev 5</em>.
+      </li>
+    </ul>
     <p>
       All urdfs are based on the default motion and joint velocity limits,
       unless noted otherwise.

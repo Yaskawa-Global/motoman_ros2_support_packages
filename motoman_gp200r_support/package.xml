@@ -17,9 +17,8 @@
     </ul>
     <p>
       Joint limits and maximum joint velocities are based on the information 
-      found in the online documentation files for the robot (GP200R_2D.zip
-      and GP200R_3D.zip from
-      https://www.motoman.com/en-us/products/robots/industrial/assembly-handling/gp-series/gp200r)
+      found in <em>MOTOMAN-GP165R,GP200R INSTRUCTIONS (HW1484396)</em>
+      version <em>186044-1CD, rev 4</em>.
       All urdfs are based on the default motion and joint velocity limits, 
       unless noted otherwise.
     </p>
