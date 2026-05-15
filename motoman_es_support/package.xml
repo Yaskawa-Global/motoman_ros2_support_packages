@@ -12,9 +12,31 @@
       for Motoman ES manipulators. This currently includes the ES165RD-II.
     </p>
     <p>
-      Joint limits and max joint velocities are based on the information in the
-      <em>YASKAWA MOTOMAN-ES165RD II INSTRUCTIONS (HW1482721)</em>, version
-      <em>170336-1CD, rev 2</em>.
+      <b>Specifications</b>
+    </p>
+    <ul>
+      <li>ES165RN - YR-ES165RN-A00 (NX100 Standard Specification)</li>
+      <li>ES165RD - YR-ES165RD-A00 (DX100 Standard Specification)</li>
+      <li>ES165RD-II - YR-ES165RD-J00 (DX200 Standard Specification)</li>
+      <li>ES200RN-120 - YR-ES200RN-A10 (NX100 Standard Specification)</li>
+      <li>ES200RD-120 - YR-ES200RD-A10 (DX100 Standard Specification)</li>
+    </ul>
+    <p>
+      Joint limits and max joint velocities are based on the information found in:
+      <ul>
+        <li><em>MOTOMAN-ES165RD II INSTRUCTIONS (HW1482721)</em>, version
+          <em>170336-1CD, rev 2</em>.
+        </li>
+        <li><em>MOTOMAN-ES165RD INSTRUCTIONS (HW0485719)</em>, version
+          <em>156827-1CD, rev 7</em>.
+        </li>
+        <li><em>MOTOMAN-ES165RD INSTRUCTIONS (HW0482145)</em>, version
+          <em>149538-1CD, rev 3</em>.
+        </li>
+        <li><em>MOTOMAN-ES200RN-120 INSTRUCTIONS (HW0482571)</em>, version
+          <em>151533-1CD, rev 1</em>.
+        </li>
+      </ul>
       All URDFs / XACROs are based on the default motion and joint velocity
       limits, unless noted otherwise (ie: no support for high speed joints,
       extended / limited motion ranges or other options).
