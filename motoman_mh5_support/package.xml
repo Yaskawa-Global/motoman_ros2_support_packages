@@ -13,8 +13,12 @@
       <b>Specifications</b>
     </p>
     <ul>
-      <li>MH5  - Short Variants: MH5F(FS100),  MH5SII(DX200),  MH5S(DX100)</li>
-      <li>MH5L - Long Variants:  MH5LF(FS100), MH5SLII(DX200), MH5SL(DX100)</li>
+      <li>MH5S - YR-MH0005S-A0* (DX100)</li>
+      <li>MH5F - YR-MH0005F-A0* (FS100)</li>
+      <li>MH5S II - YR-MH0005S-J0* (DX200/FS100)</li>
+      <li>MH5LS - YR-MH0005LS-A0* (DX100)</li>
+      <li>MH5LF - YR-MH0005LF-A0* (FS100)</li>
+      <li>MH5LS II - YR-MH0005LS-J0* (DX200/FS100)</li>
     </ul>
     <p>Models within each short / long variant are the same (physically and parameters).</p>
     <p>

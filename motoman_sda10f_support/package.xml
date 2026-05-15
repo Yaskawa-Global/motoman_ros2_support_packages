@@ -14,8 +14,8 @@
       <b>Specifications</b>
     </p>
     <ul>
-      <li>SDA10F - Default</li>
-      <li>CSDA10F (YR-CSDA010F-A10) - Default</li>
+      <li>SDA10F - YR-SDA010F-A00 (STANDARD SPECIFICATION FOR FS100)</li>
+      <li>CSDA10F - YR-CSDA010F-A10 (CLEAN STANDARD SPECIFICATION FOR FS100)</li>
     </ul>
     <p>
       Joint limits and maximum joint velocities are based on the information 
