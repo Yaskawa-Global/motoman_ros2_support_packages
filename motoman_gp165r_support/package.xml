@@ -32,8 +32,8 @@
       manual for further details.
     </p>
     <p>
-      All urdfs are based on the default motion and joint velocity limits,
-      unless noted otherwise.
+      NOTE: The 'Equipped' version only has a URDF, it does not include the
+      equipment in the meshes.
     </p>
     <p>
       Before using any of the configuration files and / or meshes included
