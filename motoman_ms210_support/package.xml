@@ -16,6 +16,9 @@
       <li>MS210 - Equipped - YR-MS210/MH225-A00 (STANDARD SPECIFICATION)</li>
     </ul>
     <p>
+      Joint limits and maximum joint velocities are based on the information 
+      found in <em>MOTOMAN-MS210 INSTRUCTIONS (HW1481922)</em>
+      version <em>165835-1CD, rev 10</em>.
       All urdfs are based on the default motion and joint velocity limits,
       unless noted otherwise.
     </p>

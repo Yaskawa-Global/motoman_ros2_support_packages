@@ -17,8 +17,8 @@
    </ul>
     <p>
       Joint limits and maximum joint velocities are based on the information 
-      found in <em>YASKAWA MOTOMAN-GP70L INSTRUCTIONS (HW2480667)</em>
-      version <em>195151-1CD, rev 3</em>.
+      found in <em>MOTOMAN-GP70L INSTRUCTIONS (HW2480667)</em>
+      version <em>195151-1CD, rev 1</em>.
     </p>
     <p>
       All urdfs are based on the default motion and joint velocity limits, 
