@@ -29,6 +29,11 @@
       </li>
     </ul>
     <p>
+      Note: there is a small internal difference between the A00 and the A20
+      to improve reliability and maintainability. It does not affect the
+      mesh or physical properties
+    </p>
+    <p>
       All urdfs are based on the default motion and joint velocity limits, 
       unless noted otherwise.
     </p>
