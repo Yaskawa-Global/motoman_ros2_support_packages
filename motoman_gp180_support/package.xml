@@ -19,8 +19,8 @@
     </ul>
     <p>
       Joint limits and maximum joint velocities are based on the information 
-      found in <em>MOTOMAN-GP225,GP180,GP180-120 INSTRUCTIONS (HW1484398)</em>
-      version <em>182739-1CD, rev 7</em>.
+      found in <em>MOTOMAN-GP225,GP180,GP180-120 INSTRUCTIONS (HW1484398), rev 7</em>
+      version <em>182739-1CD</em>.
       All urdfs are based on the default motion and joint velocity limits, 
       unless noted otherwise.
     </p>

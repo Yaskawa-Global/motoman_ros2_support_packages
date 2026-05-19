@@ -17,8 +17,8 @@
    </ul>
     <p>
       Joint limits and maximum joint velocities are based on the information 
-      found in <em>MOTOMAN-MPX1950 INSTRUCTIONS (HW1485452)</em>
-      version <em>185476-1CD, rev 9</em>.
+      found in <em>MOTOMAN-MPX1950 INSTRUCTIONS (HW1485452), rev 9</em>
+      version <em>185476-1CD</em>.
     </p>
     <p>
       All urdfs are based on the default motion and joint velocity limits, 

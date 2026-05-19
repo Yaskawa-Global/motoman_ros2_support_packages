@@ -13,8 +13,8 @@
     </p>
     <p>
       Joint limits and max joint velocities are based on the information in the
-      <em>YASKAWA MOTOMAN-ES165RD II INSTRUCTIONS (HW1482721)</em>, version
-      <em>170336-1CD, rev 2</em>.
+      <em>YASKAWA MOTOMAN-ES165RD II INSTRUCTIONS (HW1482721), rev 2</em>, version
+      <em>170336-1CD</em>.
       All URDFs / XACROs are based on the default motion and joint velocity
       limits, unless noted otherwise (ie: no support for high speed joints,
       extended / limited motion ranges or other options).
