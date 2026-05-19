@@ -13,8 +13,8 @@
       <b>Specifications</b>
     </p>
     <ul>
-      <li>GP165R - Not-Equipped - YR-1-06VR165-A00 (STANDARD SPECIFICATION)</li>
-      <li>GP165R - Equipped - YR-1-06VR165-A00 (STANDARD SPECIFICATION)</li>
+      <li>GP165R - Equipped with spot welding harness - YR-1-06VR165-A00 (STANDARD SPECIFICATION)</li>
+      <li>GP165R - Not equipped with spot welding harness - YR-1-06VR165-A00 (STANDARD SPECIFICATION)</li>
     </ul>
     <p>
       Joint limits and maximum joint velocities are based on the information
@@ -24,16 +24,16 @@
       unless noted otherwise.
     </p>
     <p>
-      This model comes in two versions 'Not-equipped' and 'Equipped'. The
-      equipped version has reduced motion range to account for restrictions
-      from extra hardware and cables routed outside of the robot.
-      The 'Equipped' version has a reduce payload of 150 kg and lower
-      allowable moment and inertia for the wrist joints. Please refer to the
-      manual for further details.
+      This model comes in two versions: equipped with spot welding harness
+      and not equipped with spot welding harness. The version with the spot
+      welding harness has reduced motion range to account for restrictions
+      from extra hardware and cables routed outside of the robot. It also
+      has a reduced payload of 150 kg and lower allowable moment and inertia
+      for the wrist joints. Please refer to the manual for further details.
     </p>
     <p>
-      NOTE: The 'Equipped' version only has a URDF, it does not include the
-      equipment in the meshes.
+      NOTE: The URDF for the version equipped with spot welding harness is missing
+      the mesh of the harness. 
     </p>
     <p>
       Before using any of the configuration files and / or meshes included
