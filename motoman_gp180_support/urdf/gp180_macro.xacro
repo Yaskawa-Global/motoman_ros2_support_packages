@@ -33,14 +33,14 @@
     </link>
     <link name="${prefix}link_2">
         <visual>
-            <origin rpy="${radians(90)} ${radians(0)} ${radians(90)}" />
+            <origin rpy="${radians(90)} 0 ${radians(90)}" />
             <geometry>
                 <mesh filename="package://motoman_gp180_support/meshes/gp180_120/visual/link_2.stl"/>
             </geometry>
             <xacro:material_yaskawa_blue/>
         </visual>
         <collision>
-            <origin rpy="${radians(90)} ${radians(0)} ${radians(90)}" />
+            <origin rpy="${radians(90)} 0 ${radians(90)}" />
             <geometry>
                 <mesh filename="package://motoman_gp180_support/meshes/gp180_120/collision/link_2.stl"/>
             </geometry>
@@ -48,14 +48,14 @@
     </link>
     <link name="${prefix}link_3">
         <visual>
-            <origin rpy="${radians(-90)} ${radians(0)} ${radians(-90)}" />
+            <origin rpy="${radians(-90)} 0 ${radians(-90)}" />
             <geometry>
                 <mesh filename="package://motoman_gp180_support/meshes/gp180/visual/link_3.stl"/>
             </geometry>
             <xacro:material_yaskawa_blue/>
         </visual>
         <collision>
-            <origin rpy="${radians(-90)} ${radians(0)} ${radians(-90)}" />
+            <origin rpy="${radians(-90)} 0 ${radians(-90)}" />
             <geometry>
                 <mesh filename="package://motoman_gp180_support/meshes/gp180/collision/link_3.stl"/>
             </geometry>
@@ -63,14 +63,14 @@
     </link>
     <link name="${prefix}link_4">
         <visual>
-            <origin rpy="${radians(0)} ${radians(90)} ${radians(0)}" xyz="0 0 1.225"/>
+            <origin rpy="0 ${radians(90)} 0" xyz="0 0 1.225"/>
             <geometry>
                 <mesh filename="package://motoman_gp180_support/meshes/gp180/visual/link_4.stl"/>
             </geometry>
             <xacro:material_yaskawa_blue/>
         </visual>
         <collision>
-            <origin rpy="${radians(0)} ${radians(90)} ${radians(0)}" xyz="0 0 1.225"/>
+            <origin rpy="0 ${radians(90)} 0" xyz="0 0 1.225"/>
             <geometry>
                 <mesh filename="package://motoman_gp180_support/meshes/gp180/collision/link_4.stl"/>
             </geometry>
@@ -78,14 +78,14 @@
     </link>
     <link name="${prefix}link_5">
         <visual>
-            <origin rpy="${radians(-90)} ${radians(0)} ${radians(-90)}" />
+            <origin rpy="${radians(-90)} 0 ${radians(-90)}" />
             <geometry>
                 <mesh filename="package://motoman_gp180_support/meshes/gp180_120/visual/link_5.stl"/>
             </geometry>
             <xacro:material_yaskawa_blue/>
         </visual>
         <collision>
-            <origin rpy="${radians(-90)} ${radians(0)} ${radians(-90)}" />
+            <origin rpy="${radians(-90)} 0 ${radians(-90)}" />
             <geometry>
                 <mesh filename="package://motoman_gp180_support/meshes/gp180_120/collision/link_5.stl"/>
             </geometry>
@@ -93,14 +93,14 @@
     </link>
     <link name="${prefix}link_6">
         <visual>
-            <origin rpy="${radians(0)} ${radians(90)} ${radians(0)}" />
+            <origin rpy="0 ${radians(90)} 0" />
             <geometry>
                 <mesh filename="package://motoman_gp180_support/meshes/gp180_120/visual/link_6.stl"/>
             </geometry>
             <xacro:material_yaskawa_blue/>
         </visual>
         <collision>
-            <origin rpy="${radians(0)} ${radians(90)} ${radians(0)}" />
+            <origin rpy="0 ${radians(90)} 0" />
             <geometry>
                 <mesh filename="package://motoman_gp180_support/meshes/gp180_120/collision/link_6.stl"/>
             </geometry>
@@ -172,7 +172,7 @@
     <!-- ROS-Industrial 'tool0' frame: all-zeros tool frame -->
     <link name="${prefix}tool0" />
     <joint name="${prefix}flange-tool0" type="fixed">
-        <origin xyz="0 0 0" rpy="${pi} ${-pi/2.0} 0" />
+        <origin xyz="0 0 0" rpy="${radians(180)} ${radians(-90)} 0" />
         <parent link="${prefix}flange" />
         <child link="${prefix}tool0" />
     </joint>

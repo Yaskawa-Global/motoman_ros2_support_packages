@@ -1,7 +1,5 @@
 <?xml version="1.0" ?>
 <robot xmlns:xacro="http://ros.org/wiki/xacro">
-
-    <xacro:property name="deg" value="0.017453293" /> <!--degrees to radians-->
     
     <xacro:macro name="motoman_sia5d" params="prefix">
 
@@ -42,7 +40,7 @@
     <parent link="${prefix}base_link" />
     <child link="${prefix}link_1" />
     <axis xyz="0 0 1" />
-    <limit lower="${-180*deg}" upper="${180*deg}" effort="0" velocity="${200*deg}" />
+    <limit lower="${radians(-180)}" upper="${radians(180)}" effort="0" velocity="${radians(200)}" />
   </joint>
 
   <link name="${prefix}link_2">
@@ -65,7 +63,7 @@
     <parent link="${prefix}link_1" />
     <child link="${prefix}link_2" />
     <axis xyz="0 1 0" />
-    <limit lower="${-110*deg}" upper="${110*deg}" effort="0" velocity="${200*deg}" />
+    <limit lower="${radians(-110)}" upper="${radians(110)}" effort="0" velocity="${radians(200)}" />
   </joint>
 
   <link name="${prefix}link_3">
@@ -88,7 +86,7 @@
     <parent link="${prefix}link_2" />
     <child link="${prefix}link_3" />
     <axis xyz="0 0 1" />
-    <limit lower="${-170*deg}" upper="${170*deg}" effort="0" velocity="${200*deg}" />
+    <limit lower="${radians(-170)}" upper="${radians(170)}" effort="0" velocity="${radians(200)}" />
   </joint>
   
   <link name="${prefix}link_4">
@@ -111,7 +109,7 @@
     <parent link="${prefix}link_3" />
     <child link="${prefix}link_4" />
     <axis xyz="0 -1 0" />
-    <limit lower="${-90*deg}" upper="${115*deg}" effort="0"  velocity="${200*deg}" />
+    <limit lower="${radians(-90)}" upper="${radians(115)}" effort="0" velocity="${radians(200)}" />
   </joint>
 
   <link name="${prefix}link_5">
@@ -134,7 +132,7 @@
     <parent link="${prefix}link_4" />
     <child link="${prefix}link_5" />
     <axis xyz="-1 0 0" />
-    <limit lower="${-90*deg}" upper="${90*deg}" effort="0" velocity="${200*deg}" />
+    <limit lower="${radians(-90)}" upper="${radians(90)}" effort="0" velocity="${radians(200)}" />
   </joint>
 
   <link name="${prefix}link_6">
@@ -157,7 +155,7 @@
     <parent link="${prefix}link_5" />
     <child link="${prefix}link_6" />
     <axis xyz="0 -1 0" />
-    <limit lower="${-110*deg}" upper="${110*deg}" effort="0" velocity="${230*deg}" />
+    <limit lower="${radians(-110)}" upper="${radians(110)}" effort="0" velocity="${radians(230)}" />
   </joint>
 
   <link name="${prefix}link_7">
@@ -180,7 +178,7 @@
     <parent link="${prefix}link_6" />
     <child link="${prefix}link_7" />
     <axis xyz="-1 0 0" />
-    <limit lower="${-90*deg}" upper="${90*deg}" effort="0" velocity="${350*deg}" />
+    <limit lower="${radians(-90)}" upper="${radians(90)}" effort="0" velocity="${radians(350)}" />
   </joint>
   <!-- end of joint list -->
   
@@ -203,7 +201,7 @@
   <!-- ROS-Industrial 'tool0' frame: all-zeros tool frame -->
   <link name="${prefix}tool0"/>
   <joint name="${prefix}flange-tool0" type="fixed">
-    <origin xyz="0 0 0 " rpy="${180*deg} ${-90*deg} 0"/>
+    <origin xyz="0 0 0" rpy="${radians(180)} ${radians(-90)} 0"/>
     <parent link="${prefix}flange"/>
     <child link="${prefix}tool0"/>
   </joint>
