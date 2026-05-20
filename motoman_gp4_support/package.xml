@@ -18,8 +18,7 @@
    </ul>
     <p>
       Joint limits and maximum joint velocities are based on the information 
-      found in <em>MOTOMAN-GP4 INSTRUCTIONS (HW2480085), rev 6</em>
-      version <em>192633-1CD</em>.
+      found in <em>MOTOMAN-GP4 INSTRUCTIONS (HW2480085), rev 6</em>.
     </p>
     <p>
       All urdfs are based on the default motion and joint velocity limits, 

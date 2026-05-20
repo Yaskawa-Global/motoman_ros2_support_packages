@@ -19,8 +19,7 @@
       </ul>
     <p>
       Joint limits and maximum joint velocities are based on the information 
-      found in <em>MOTOPOS-D500B POSITIONER INSTRUCTIONS (HS0481306), rev 7</em>
-      version <em>151867-1CD</em>.
+      found in <em>MOTOPOS-D500B POSITIONER INSTRUCTIONS (HS0481306), rev 7</em>.
       All urdfs are based on the default motion and joint velocity limits, 
       unless noted otherwise.
     </p>

@@ -17,8 +17,7 @@
     </ul>
     <p>
       Joint limits and maximum joint velocities are based on the information
-      found in <em>MOTOMAN-MH12 INSTRUCTIONS (HW1482347), rev 9</em> version
-      <em>167105-1CD</em>.
+      found in <em>MOTOMAN-MH12 INSTRUCTIONS (HW1482347), rev 9</em>.
     </p>
     <p>
       All urdfs are based on the default motion and joint velocity limits,

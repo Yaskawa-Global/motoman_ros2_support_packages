@@ -17,8 +17,7 @@
     </ul>
     <p>
       Joint limits and maximum joint velocities are based on the information 
-      found in <em>MOTOMAN-SIA10D/SIA10F INSTRUCTIONS (HW0485586), rev 5</em>
-      version <em>156386-1CD</em>.
+      found in <em>MOTOMAN-SIA10D/SIA10F INSTRUCTIONS (HW0485586), rev 5</em>.
       All urdfs are based on the default motion and joint velocity limits, 
       unless noted otherwise.
     </p>
