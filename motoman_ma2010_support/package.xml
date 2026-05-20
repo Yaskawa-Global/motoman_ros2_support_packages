@@ -15,8 +15,12 @@
       <b>Specifications</b>
     </p>
     <ul>
-      <li>MA2010 - Default</li>
+      <li>MA2010 - YR-MA02010-A00 (STANDARD SPECIFICATION)</li>
     </ul>
+    <p>
+      Joint limits and maximum joint velocities are based on the information 
+      found in <em>MOTOMAN-MA-2010 INSTRUCTIONS (HW1482758), rev 7</em>.
+    </p>
     <p>
       All urdfs are based on the default motion and joint velocity limits,
       unless noted otherwise.

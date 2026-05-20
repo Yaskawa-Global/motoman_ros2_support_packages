@@ -13,12 +13,11 @@
       <b>Specifications</b>
     </p>
     <ul>
-      <li>SIA5D - Default</li>
+      <li>SIA5D - YR-SIA005D-A00 (STANDARD SPECIFICATION FOR DX100)</li>
     </ul>
     <p>
       Joint limits and maximum joint velocities are based on the information 
-      found in the online 
-      http://www.motoman.com/datasheets/sia5d.pdf
+      found in <em>MOTOMAN-SIA5D/SIA5F INSTRUCTIONS (HW1480142), rev 4</em>.
       All urdfs are based on the default motion and joint velocity limits, 
       unless noted otherwise.
     </p>

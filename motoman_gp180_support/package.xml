@@ -14,16 +14,26 @@
       <b>Specifications</b>
     </p>
     <ul>
-      <li>GP180 - Default</li>
-      <li>GP180-120 - Default</li>
+      <li>GP180 - Not equipped with spot welding harness - YR-1-06VX180-A00 (STANDARD SPECIFICATION)</li>
+      <li>GP180-120 - Not equipped with spot welding harness - YR-1-06VX180-120-A00 (STANDARD SPECIFICATION)</li>
     </ul>
     <p>
       Joint limits and maximum joint velocities are based on the information 
-      found in the online documentation files for the robot (GP180-120_2D.zip
-      and GP180-120_3D.zip from
-      https://www.cz.yaskawa.eu.com/en/products/robotics/motoman-robots/productdetail/product/gp180-120/)
+      found in <em>MOTOMAN-GP225,GP180,GP180-120 INSTRUCTIONS (HW1484398), rev 7</em>.
       All urdfs are based on the default motion and joint velocity limits, 
       unless noted otherwise.
+    </p>
+    <p>
+      This model comes in two versions: equipped with spot welding harness
+      and not equipped with spot welding harness. The version with the spot
+      welding harness has reduced motion range to account for restrictions
+      from extra hardware and cables routed outside of the robot. It also
+      has a reduced payload of 165 kg for the GP180 and 105 kg for the
+      GP180-120 and lower allowable moment and inertia for the wrist joints.
+      Please refer to the manual for further details.
+    </p>
+    <p>
+      This support package only has the versions without a spot welding harness
     </p>
     <p>
       Before using any of the configuration files and / or meshes included

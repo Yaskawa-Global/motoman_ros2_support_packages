@@ -13,14 +13,17 @@
       <b>Specifications</b>
     </p>
     <ul>
-      <li>GP12 - Default</li>
+      <li>GP12 - YR-1-06VXH12-A00 (STANDARD SPECIFICATION)</li>
+      <li>AR1440 - YR-1-06VXH12-A01 (WITH WELDING CABLE SPECIFICATION)</li>
     </ul>
     <p>
       Joint limits and maximum joint velocities are based on the information 
-      found in the online 
-      https://www.motoman.com/hubfs/Robots/GP12.pdf
+      found in <em>MOTOMAN-GP12 INSTRUCTIONS (HW1484060), rev 6</em>.
       All urdfs are based on the default motion and joint velocity limits, 
       unless noted otherwise.
+    </p>
+    <p>
+      Note: The GP12 and AR1440 use the same URDF (gp12)
     </p>
     <p>
       Before using any of the configuration files and / or meshes included

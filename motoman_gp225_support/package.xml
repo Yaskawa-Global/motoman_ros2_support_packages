@@ -13,12 +13,24 @@
       <b>Specifications</b>
     </p>
     <ul>
-      <li>GP225 - Not-equipped (Default)</li>
+      <li>GP225 - Not equipped with spot welding harness - YR-1-06VX225-A00 (STANDARD SPECIFICATION)</li>
     </ul>
     <p>
       Joint limits and maximum joint velocities are based on the information 
-      found in <em>YASKAWA MOTOMAN-GP225,GP180,GP180-120 INSTRUCTIONS (HW1484398)</em>
-      version <em>182739-1CD, rev 5</em>.
+      found in <em>MOTOMAN-GP225,GP180,GP180-120 INSTRUCTIONS (HW1484398), rev 7</em>.
+      All urdfs are based on the default motion and joint velocity limits, 
+      unless noted otherwise.
+    </p>
+    <p>
+      This model comes in two versions: equipped with spot welding harness
+      and not equipped with spot welding harness. The version with the spot
+      welding harness has reduced motion range to account for restrictions
+      from extra hardware and cables routed outside of the robot. It also
+      has a reduced payload of 210 kg and lower allowable moment and inertia
+      for the wrist joints. Please refer to the manual for further details.
+    </p>
+    <p>
+      This support package only has the version without a spot welding harness
     </p>
     <p>
       Before using any of the configuration files and / or meshes included

@@ -13,14 +13,24 @@
       <b>Specifications</b>
     </p>
     <ul>
-      <li>GP110 - Default</li>
+      <li>GP110 - Not equipped with spot welding harness - YR-1-06VX110-A00 (STANDARD SPECIFICATION)</li>
     </ul>
     <p>
       Joint limits and maximum joint velocities are based on the information 
-      found in the online documentation files for the robot (CAD model GP110_SP100_3D.zip
-      and drawing datasheet <em>HW1385705.01</em> from <a href="https://www.yaskawa.eu.com/products/robots/handling-mounting/productdetail/product/gp110_704">here</a>).
+      found in <em>MOTOMAN-GP110 INSTRUCTIONS (HW1484665), rev 4</em>.
       All urdfs are based on the default motion and joint velocity limits, 
       unless noted otherwise.
+    </p>
+    <p>
+      This model comes in two versions: equipped with spot welding harness
+      and not equipped with spot welding harness. The version with the spot
+      welding harness has reduced motion range to account for restrictions
+      from extra hardware and cables routed outside of the robot. It also
+      has a reduced payload of 100 kg and lower allowable moment and inertia
+      for the wrist joints. Please refer to the manual for further details.
+    </p>
+    <p>
+      This support package only has the version without a spot welding harness
     </p>
     <p>
       Before using any of the configuration files and / or meshes included

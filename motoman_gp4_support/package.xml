@@ -14,12 +14,11 @@
       <b>Specifications</b>
     </p>
     <ul>
-      <li>GP4 - Default</li>
+      <li>GP4 - YR-1-06VX4-A00 (STANDARD SPECIFICATION)</li>
    </ul>
     <p>
       Joint limits and maximum joint velocities are based on the information 
-      found in <em>YASKAWA MOTOMAN-GP4 INSTRUCTIONS (HW2480085)</em>
-      version <em>192633-1CD, rev 1</em>.
+      found in <em>MOTOMAN-GP4 INSTRUCTIONS (HW2480085), rev 6</em>.
     </p>
     <p>
       All urdfs are based on the default motion and joint velocity limits, 

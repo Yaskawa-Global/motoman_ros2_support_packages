@@ -13,12 +13,20 @@
       <b>Specifications</b>
     </p>
     <ul>
-      <li>MH50 - Default</li>
+      <li>MH50 - YR-MH00050-A00 (STANDARD SPECIFICATION FOR DX100)</li>
+      <li>MH50 II - YR-MH00050-J00 (STANDARD SPECIFICATION FOR DX200)</li>
     </ul>
     <p>
       Joint limits and maximum joint velocities are based on the information 
-      found in the online 
-      https://www.motoman.com/hubfs/Robots/mh50.pdf
+      found in:
+    </p>
+    <ul>
+      <li><em>MOTOMAN-MH50 INSTRUCTIONS (HW0485217), rev 7</em>.
+      </li>
+      <li><em>MOTOMAN-MH50 INSTRUCTIONS (HW1482719), rev 8</em>.
+      </li>
+    </ul>
+    <p>
       All urdfs are based on the default motion and joint velocity limits, 
       unless noted otherwise.
     </p>

@@ -13,12 +13,11 @@
       <b>Specifications</b>
     </p>
     <ul>
-      <li>AR2010 - Default</li>
+      <li>AR2010 - YR-1-06VXH25-A11 (TWO AIR LINES (BUILT-IN HIGH CURRENT POWER CABLE))</li>
     </ul>
     <p>
       Joint limits and maximum joint velocities are based on the information 
-      found in <em>YASKAWA MOTOMAN AR2010 INSTRUCTIONS (HW1484892)</em> version
-      <em>182442-1CD, rev 0</em>.
+      found in <em>MOTOMAN-AR2010 INSTRUCTIONS (HW1484892), rev 3</em>.
       All urdfs are based on the default motion and joint velocity limits, 
       unless noted otherwise.
     </p>

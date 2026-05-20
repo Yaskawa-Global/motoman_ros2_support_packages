@@ -13,12 +13,11 @@
       <b>Specifications</b>
     </p>
     <ul>
-      <li>MotoMini - Default</li>
+      <li>MotoMINI - YR-1-06VX05-A00 (STANDARD SPECIFICATION)</li>
     </ul>
     <p>
       Joint limits and maximum joint velocities are based on the information 
-      found in the online 
-      https://www.motoman.com/hubfs/Robots/MotoMini.pdf
+      found in <em>MOTOMINI INSTRUCTIONS (HW1484782), rev 4</em>.
       All urdfs are based on the default motion and joint velocity limits, 
       unless noted otherwise.
     </p>

@@ -13,13 +13,11 @@
       <b>Specifications</b>
     </p>
     <ul>
-      <li>GP88 - Default</li>
+      <li>GP88 - YR-1-06VX88-A00 (STANDARD SPECIFICATION)</li>
     </ul>
     <p>
       Joint limits and maximum joint velocities are based on the information 
-      found in the online documentation files for the robot (GP88_2D.zip
-      and GP88_3D.zip from
-      https://www.yaskawa.eu.com/en/products/robotics/motoman-robots/productdetail/product/gp88/)
+      found in <em>MOTOMAN-GP88 INSTRUCTIONS (HW1484661), rev 6</em>.
       All urdfs are based on the default motion and joint velocity limits, 
       unless noted otherwise.
     </p>

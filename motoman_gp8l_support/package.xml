@@ -13,14 +13,11 @@
       <b>Specifications</b>
     </p>
     <ul>
-      <li>GP8L - Default</li>
+      <li>GP8L - YR-1-06VXL8-A00 (STANDARD SPECIFICATION)</li>
     </ul>
     <p>
       Joint limits and maximum joint velocities are based on the information 
-      found in the <em>YASKAWA MOTOMAN-GP8L INSTRUCTIONS (HW1486242)</em>
-      version <em>194163-1CD, rev 2</em>.
-    </p>
-    <p>
+      found in <em>MOTOMAN-GP8L INSTRUCTIONS (HW1486242), rev 6</em>.
       All urdfs are based on the default motion and joint velocity limits, 
       unless noted otherwise.
     </p>

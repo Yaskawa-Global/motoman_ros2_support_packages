@@ -13,12 +13,11 @@
       <b>Specifications</b>
     </p>
     <ul>
-      <li>MH12 - Default</li>
+      <li>MH12 - YR-MA1440/MH12-A00 (STANDARD SPECIFICATION)</li>
     </ul>
     <p>
       Joint limits and maximum joint velocities are based on the information
-      found in the <em>MOTOMAN-MH12 INSTRUCTIONS (HW1482347)</em> version
-      <em>167105-1CD, rev 5</em>.
+      found in <em>MOTOMAN-MH12 INSTRUCTIONS (HW1482347), rev 9</em>.
     </p>
     <p>
       All urdfs are based on the default motion and joint velocity limits,

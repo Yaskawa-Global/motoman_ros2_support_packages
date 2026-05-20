@@ -14,16 +14,19 @@
       <b>Specifications</b>
     </p>
     <ul>
-      <li>SDA10F - Default</li>
-      <li>CSDA10F (YR-CSDA010F-A10) - Default</li>
+      <li>SDA10F - YR-SDA010F-A00 (STANDARD SPECIFICATION FOR FS100)</li>
+      <li>CSDA10F - YR-CSDA010F-A10 (CLEAN STANDARD SPECIFICATION FOR FS100)</li>
     </ul>
     <p>
       Joint limits and maximum joint velocities are based on the information 
-      found in the online 
-      http://www.motoman.com/datasheets/sda10f.pdf for SDA10F and
-      in the <em>MOTOMAN-CSDA10D/CSDA10F INSTRUCTIONS (HW1481698)</em>
-      version <em>173323-1CD, rev 0</em> for CSDA10F.
+      found in:
     </p>
+    <ul>
+      <li><em>MOTOMAN-SDA10D/SDA10F INSTRUCTIONS (HW0485584), rev 6</em>.
+      </li>
+      <li><em>MOTOMAN-CSDA10D/CSDA10F INSTRUCTIONS (HW1481698), rev 4</em>.
+      </li>
+    </ul>
     <p>
       All urdfs are based on the default motion and joint velocity limits, 
       unless noted otherwise.

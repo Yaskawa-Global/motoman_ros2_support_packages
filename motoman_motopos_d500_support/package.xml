@@ -15,12 +15,12 @@
       <b>Specifications</b>
     </p>
       <ul>
-        <li>MotoPos D500 - Default</li>
+        <li>MOTOPOS-D500B POSITIONER - YR-MPD500B-A00</li>
       </ul>
     <p>
-      Joint limits and maximum joint velocities are based on the information
-      found in the online PB-283_MotoPos D250-D500 DX.pdf
-      All urdfs are based on the default motion and joint velocity limits,
+      Joint limits and maximum joint velocities are based on the information 
+      found in <em>MOTOPOS-D500B POSITIONER INSTRUCTIONS (HS0481306), rev 7</em>.
+      All urdfs are based on the default motion and joint velocity limits, 
       unless noted otherwise.
     </p>
     <p>

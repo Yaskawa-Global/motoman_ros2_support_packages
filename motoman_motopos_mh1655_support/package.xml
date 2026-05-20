@@ -20,7 +20,7 @@
     <p>
       Joint limits and maximum joint velocities are based on the information
       found in <em>YASKAWA MH(T)-SERIES SIGMA-5 POSITIONER MANUAL</em> version
-      <em>168961-1CD</em>.
+      <em>168961-1CD, rev 8</em>.
       All urdfs are based on the default motion and joint velocity limits,
       unless noted otherwise.
     </p>

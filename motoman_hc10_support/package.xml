@@ -14,27 +14,23 @@
       <b>Specifications</b>
     </p>
     <ul>
-      <li>HC10 - model 1-06VXHC10-A0*</li>
-      <li>HC10DT - model 1-06VXHC10-A1*</li>
-      <li>HC10DT-B10 - model 1-06VXHC10-B1*</li>
-      <li>HC10DTP-B00 - model 1-06VXCP10-B0*</li>
+      <li>HC10 - YR-1-06VXHC10-A0*</li>
+      <li>HC10DT - YR-1-06VXHC10-A1*</li>
+      <li>HC10DT-B10 - YR-1-06VXHC10-B1*</li>
+      <li>HC10DTP-B00 - YR-1-06VXCP10-B0*</li>
    </ul>
     <p>
       Joint limits and maximum joint velocities are based on the information 
       found in:
     </p>
     <ul>
-      <li><em>YASKAWA MOTOMAN-HC10 INSTRUCTIONS (HW1483896)</em> version
-        <em>180571-1CD, rev 2</em>.
+      <li><em>MOTOMAN-HC10 INSTRUCTIONS (HW1483896), rev 7</em>.
       </li>
-      <li><em>YASKAWA MOTOMAN-HC10DT INSTRUCTIONS (HW1485083)</em> version
-        <em>184672-1CD, rev 2</em>.
+      <li><em>MOTOMAN-HC10DT INSTRUCTIONS (HW1485083), rev 5</em>.
       </li>
-      <li><em>YASKAWA MOTOMAN-HC10DT INSTRUCTIONS DUST-PROOF/DRIP-PROOF (HW1485083)</em> version
-        <em>188669-1CD, rev 1</em>.
+      <li><em>MOTOMAN-HC10DT INSTRUCTIONS DUST-PROOF/DRIP-PROOF (HW1485922), rev 1</em>.
       </li>
-      <li><em>YASKAWA MOTOMAN-HC10DTP INSTRUCTIONS DUST-PROOF/DRIP-PROOF (HW2480392)</em> version
-        <em>193887-1CD, rev 1</em>.
+      <li><em>MOTOMAN-HC10DTP INSTRUCTIONS DUST-PROOF/DRIP-PROOF (HW2480392), rev 5</em>.
       </li>
     </ul>
     <p>

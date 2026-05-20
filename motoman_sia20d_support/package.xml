@@ -13,12 +13,11 @@
       <b>Specifications</b>
     </p>
     <ul>
-      <li>SIA20D - Default</li>
+      <li>SIA20D - YR-SIA020D-A00 (STANDARD SPECIFICATION)</li>
     </ul>
     <p>
       Joint limits and maximum joint velocities are based on the information 
-      found in the online 
-      http://www.motoman.com/datasheets/sia20d.pdf
+      found in <em>MOTOMAN-SIA20D/SIA20F INSTRUCTIONS (HW0485536), rev 4</em>.
       All urdfs are based on the default motion and joint velocity limits, 
       unless noted otherwise.
     </p>

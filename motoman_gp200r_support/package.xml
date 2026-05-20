@@ -13,15 +13,24 @@
       <b>Specifications</b>
     </p>
     <ul>
-      <li>GP200R - Default</li>
+      <li>GP200R - Not equipped with spot welding harness - YR-1-06VR200-A00 (STANDARD SPECIFICATION)</li>
     </ul>
     <p>
       Joint limits and maximum joint velocities are based on the information 
-      found in the online documentation files for the robot (GP200R_2D.zip
-      and GP200R_3D.zip from
-      https://www.motoman.com/en-us/products/robots/industrial/assembly-handling/gp-series/gp200r)
+      found in <em>MOTOMAN-GP165R,GP200R INSTRUCTIONS (HW1484396),  rev 4</em>.
       All urdfs are based on the default motion and joint velocity limits, 
       unless noted otherwise.
+    </p>
+    <p>
+      This model comes in two versions: equipped with spot welding harness
+      and not equipped with spot welding harness. The version with the spot
+      welding harness has reduced motion range to account for restrictions
+      from extra hardware and cables routed outside of the robot. It also
+      has a reduced payload of 185 kg and lower allowable moment and inertia
+      for the wrist joints. Please refer to the manual for further details.
+    </p>
+    <p>
+      This support package only has the version without a spot welding harness
     </p>
     <p>
       Before using any of the configuration files and / or meshes included
