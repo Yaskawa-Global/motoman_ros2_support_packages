@@ -111,7 +111,7 @@
       <child link="${prefix}link_1"/>
       <origin xyz="0.100 ${reflect*0.265} 0" rpy="${radians(90)} 0 ${(reflect-1)*radians(90)}"/>
       <axis xyz="0 0 ${-reflect}" />
-      <limit lower="${radians(-180)}" upper="${radians(180)}" effort="268.36" velocity="${radians(170)}" />
+      <limit lower="${radians(-170)}" upper="${radians(170)}" effort="268.36" velocity="${radians(170)}" />
     </joint>
     <joint name="${prefix}joint_2" type="revolute">
       <parent link="${prefix}link_1"/>
