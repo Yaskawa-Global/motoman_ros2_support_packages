@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format2.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="2">
+  <name>motoman_pl80_support</name>
+  <version>0.3.5</version>
+  <description>
+    <p>ROS-Industrial support for the Motoman PL80 (and variants).</p>
+    <p>
+      This package contains configuration data, 3D models and launch files
+      for Motoman PL80 manipulators.
+    </p>
+    <p>
+      <b>Specifications</b>
+    </p>
+    <ul>
+      <li>PL80 - YR-1-05VX80-A00 (STANDARD SPECIFICATION)</li>
+    </ul>
+    <p>
+      Joint limits and maximum joint velocities are based on the information
+      found in <em>MOTOMAN-PL80 INSTRUCTIONS (HW2480410), rev 1</em>.
+      All urdfs are based on the default motion and joint velocity limits,
+      unless noted otherwise.
+    </p>
+    <p>
+      NOTE: the PL80 is a palletizing manipulator, where the 4th
+      joint ('joint_4') is constrained to orient the flange normal 
+      to within +/-15 degrees with respect to the ground plane normal.
+      Unfortunately, this limitation can't be modelled using URDF joint limits,
+      and must therefore be handled by the motion planner or other process
+      planning trajectories.
+      Failure to take this constraint into account will cause the Yaskawa robot
+      controller to abort trajectory execution and to raise alarms on the Teach
+      Pendant.
+    </p>
+    <p>
+      Before using any of the configuration files and / or meshes included
+      in this package, be sure to check they are correct for the particular
+      robot model and configuration you intend to use them with.
+    </p>
+  </description>
+  <author>Jimmy McElwain</author>
+  <maintainer email="techsupport@motoman.com">Eric Marcil</maintainer>
+  <maintainer email="g.a.vanderhoorn@tudelft.nl">G.A. vd. Hoorn (TU Delft Robotics Institute)</maintainer>
+  <license>Apache 2.0</license>
+
+  <url type="bugtracker">https://github.com/yaskawa-global/motoman_ros2_support_packages/issues</url>
+  <url type="repository">https://github.com/yaskawa-global/motoman_ros2_support_packages</url>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <exec_depend>joint_state_publisher_gui</exec_depend>
+  <exec_depend>motoman_resources</exec_depend>
+  <exec_depend>robot_state_publisher</exec_depend>
+  <exec_depend>rviz2</exec_depend>
+  <exec_depend>xacro</exec_depend>
+
+  <export>
+    <architecture_independent/>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
