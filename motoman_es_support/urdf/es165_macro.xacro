@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://ros.org/wiki/xacro">
-  <xacro:macro name="motoman_es165" params="prefix joint_velocities_file">
+  <xacro:macro name="motoman_es165" params="prefix joint_limits_file">
     <xacro:include filename="$(find motoman_resources)/urdf/common_materials.xacro"/>
 
     <!-- link list -->
@@ -149,49 +149,49 @@
     <!-- end of link list -->
 
     <!-- joint list -->
-    <xacro:property name="velocities" value="${xacro.load_yaml(joint_velocities_file)}" />
+    <xacro:property name="limits" value="${xacro.load_yaml(joint_limits_file)}" />
 
     <joint name="${prefix}joint_1" type="revolute">
       <origin xyz="0 0 0.450" rpy="0 0 0"/>
       <parent link="${prefix}base_link"/>
       <child link="${prefix}link_1"/>
       <axis xyz="0 0 1"/>
-      <limit lower="${radians(-180)}" upper="${radians(180)}" effort="0" velocity="${radians(velocities['joint_1'])}"/>
+      <limit lower="${radians(-180)}" upper="${radians(180)}" effort="${limits['joint_1']['effort']}" velocity="${radians(limits['joint_1']['velocity'])}"/>
     </joint>
     <joint name="${prefix}joint_2" type="revolute">
       <origin xyz="0.740 0 0" rpy="0 0 0"/>
       <parent link="${prefix}link_1"/>
       <child link="${prefix}link_2"/>
       <axis xyz="0 1 0"/>
-      <limit lower="${radians(-130)}" upper="${radians(80)}" effort="0" velocity="${radians(velocities['joint_2'])}"/>
+      <limit lower="${radians(-130)}" upper="${radians(80)}" effort="${limits['joint_2']['effort']}" velocity="${radians(limits['joint_2']['velocity'])}"/>
     </joint>
     <joint name="${prefix}joint_3" type="revolute">
       <origin xyz="1.150 0 0" rpy="0 0 0"/>
       <parent link="${prefix}link_2"/>
       <child link="${prefix}link_3"/>
       <axis xyz="0 -1 0"/>
-      <limit lower="${radians(-112)}" upper="${radians(208)}" effort="0" velocity="${radians(velocities['joint_3'])}"/>
+      <limit lower="${radians(-112)}" upper="${radians(208)}" effort="${limits['joint_3']['effort']}" velocity="${radians(limits['joint_3']['velocity'])}"/>
     </joint>
     <joint name="${prefix}joint_4" type="revolute">
       <origin xyz="0.250 0 0" rpy="0 0 0"/>
       <parent link="${prefix}link_3"/>
       <child link="${prefix}link_4"/>
       <axis xyz="0 0 1"/>
-      <limit lower="${radians(-360)}" upper="${radians(360)}" effort="0" velocity="${radians(velocities['joint_4'])}"/>
+      <limit lower="${radians(-360)}" upper="${radians(360)}" effort="${limits['joint_4']['effort']}" velocity="${radians(limits['joint_4']['velocity'])}"/>
     </joint>
     <joint name="${prefix}joint_5" type="revolute">
       <origin xyz="0 0 -1.225" rpy="0 0 0"/>
       <parent link="${prefix}link_4"/>
       <child link="${prefix}link_5"/>
       <axis xyz="0 -1 0"/>
-      <limit lower="${radians(-130)}" upper="${radians(130)}" effort="0" velocity="${radians(velocities['joint_5'])}"/>
+      <limit lower="${radians(-130)}" upper="${radians(130)}" effort="${limits['joint_5']['effort']}" velocity="${radians(limits['joint_5']['velocity'])}"/>
     </joint>
     <joint name="${prefix}joint_6" type="revolute">
       <origin xyz="0 0 -0.225" rpy="0 0 0"/>
       <parent link="${prefix}link_5"/>
       <child link="${prefix}link_6"/>
       <axis xyz="0 0 1"/>
-      <limit lower="${radians(-360)}" upper="${radians(360)}" effort="0" velocity="${radians(velocities['joint_6'])}"/>
+      <limit lower="${radians(-360)}" upper="${radians(360)}" effort="${limits['joint_6']['effort']}" velocity="${radians(limits['joint_6']['velocity'])}"/>
     </joint>
 
     <!--
