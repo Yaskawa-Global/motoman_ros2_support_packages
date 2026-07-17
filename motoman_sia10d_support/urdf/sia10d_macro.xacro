@@ -3,9 +3,6 @@
     <xacro:macro name="motoman_sia10d" params="prefix">
         <xacro:include filename="$(find motoman_resources)/urdf/common_materials.xacro"/>
         <!-- link list -->
-        <link name="world">
-            <origin xyz="0 0 0" rpy="0 0 0"/>
-        </link>
         <link name="${prefix}base_link">
             <visual>
                 <geometry>
@@ -139,11 +136,6 @@
 
         <!-- end of link list -->
         <!-- joint list -->
-        <joint name="world-base" type="fixed">
-            <origin xyz="0 0 0" rpy="0 0 0"/>
-            <parent link="world" />
-            <child link="base_link"/>
-        </joint>
         <joint name="${prefix}joint_1" type="revolute">
             <parent link="${prefix}base_link"/>
             <child link="${prefix}link_1"/>
