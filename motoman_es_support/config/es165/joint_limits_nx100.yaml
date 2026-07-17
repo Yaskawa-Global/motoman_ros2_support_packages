@@ -1,0 +1,20 @@
+# ES165RN (YR-ES165RN-A00, NX100)
+# velocity in deg/s, effort in Nm
+joint_1:
+  velocity: 105.0
+  effort: 6354.71
+joint_2:
+  velocity: 105.0
+  effort: 8825.99
+joint_3:
+  velocity: 105.0
+  effort: 6276.26
+joint_4:
+  velocity: 175.0
+  effort: 1253.29
+joint_5:
+  velocity: 145.0
+  effort: 1569.06
+joint_6:
+  velocity: 240.0
+  effort: 617.82
