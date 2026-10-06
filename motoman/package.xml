@@ -46,6 +46,7 @@
   <exec_depend>motoman_motopos_mh1655_support</exec_depend>
   <exec_depend>motoman_mpx1950_support</exec_depend>
   <exec_depend>motoman_ms210_support</exec_depend>
+  <exec_depend>motoman_pl80_support</exec_depend>
   <exec_depend>motoman_resources</exec_depend>
   <exec_depend>motoman_sda10f_support</exec_depend>
   <exec_depend>motoman_sia10d_support</exec_depend>
