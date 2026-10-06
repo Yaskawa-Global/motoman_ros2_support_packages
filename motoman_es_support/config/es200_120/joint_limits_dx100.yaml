@@ -1,0 +1,20 @@
+# ES200RD-120 (YR-ES200RD-A10, DX100)
+# velocity in deg/s, effort in Nm
+joint_1:
+  velocity: 90.0
+  effort: 6276.26
+joint_2:
+  velocity: 85.0
+  effort: 7391.76
+joint_3:
+  velocity: 85.0
+  effort: 7833.06
+joint_4:
+  velocity: 175.0
+  effort: 1253.29
+joint_5:
+  velocity: 150.0
+  effort: 1569.06
+joint_6:
+  velocity: 240.0
+  effort: 617.82
