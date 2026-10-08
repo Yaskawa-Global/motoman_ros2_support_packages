@@ -1,0 +1,93 @@
+<?xml version="1.0" ?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro">
+  <xacro:macro name="motoman_sg400" params="prefix">
+
+    <!-- link list -->
+    <link name="${prefix}base_link">
+      <visual>
+        <geometry>
+          <mesh filename="package://motoman_sg400_support/meshes/sg400/visual/base_link.dae"/>
+        </geometry>
+      </visual>
+    </link>
+    <link name="${prefix}link_1">
+      <visual>
+        <geometry>
+          <mesh filename="package://motoman_sg400_support/meshes/sg400/visual/link_1.dae"/>
+        </geometry>
+      </visual>
+    </link>
+    <link name="${prefix}link_2">
+      <visual>
+        <geometry>
+          <mesh filename="package://motoman_sg400_support/meshes/sg400/visual/link_2.dae"/>
+        </geometry>
+      </visual>
+    </link>
+    <link name="${prefix}link_3"/>
+    <link name="${prefix}link_4">
+      <visual>
+        <geometry>
+          <mesh filename="package://motoman_sg400_support/meshes/sg400/visual/link_4.dae"/>
+        </geometry>
+      </visual>
+    </link>
+    <!-- end of link list -->
+
+    <!-- joint list -->
+    <joint name="${prefix}joint_1" type="revolute">
+      <parent link="${prefix}base_link"/>
+      <child link="${prefix}link_1"/>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <axis xyz="0 0 1" />
+      <limit lower="${radians(-142)}" upper="${radians(142)}" effort="50.40" velocity="${radians(740)}"/>
+    </joint>
+    <joint name="${prefix}joint_2" type="revolute">
+      <parent link="${prefix}link_1"/>
+      <child link="${prefix}link_2"/>
+      <origin xyz="0.200 0 0" rpy="0 0 0" />
+      <axis xyz="0 0 1" />
+      <limit lower="${radians(-147)}" upper="${radians(147)}" effort="30.60" velocity="${radians(800)}"/>
+    </joint>
+    <joint name="${prefix}joint_3" type="prismatic">
+      <parent link="${prefix}link_2"/>
+      <child link="${prefix}link_3"/>
+      <origin xyz="0.200 0 0.140" rpy="0 0 0" />
+      <axis xyz="0 0 1" />
+      <limit lower="-0.200" upper="0" effort="15" velocity="1.200"/>
+    </joint>
+    <joint name="${prefix}joint_4" type="revolute">
+      <parent link="${prefix}link_3"/>
+      <child link="${prefix}link_4"/>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <axis xyz="0 0 1" />
+      <limit lower="${radians(-360)}" upper="${radians(360)}" effort="10.29" velocity="${radians(3000)}"/>
+    </joint>
+    <!-- end of joint list -->
+
+    <!-- ROS base_link to Robot Manufacturer World Coordinates transform -->
+    <link name="${prefix}base" />
+    <joint name="${prefix}base_link-base" type="fixed">
+      <origin xyz="0 0 -0.06" rpy="0 0 0"/>
+      <parent link="${prefix}base_link"/>
+      <child link="${prefix}base"/>
+    </joint>
+
+    <!-- ROS-Industrial 'flange' frame, attachment point for EEF models -->
+    <link name="${prefix}flange"/>
+    <joint name="${prefix}joint_4-flange" type="fixed">
+      <origin xyz="0 0 0" rpy="0 ${radians(90)} 0"/>
+      <parent link="${prefix}link_4"/>
+      <child link="${prefix}flange"/>
+    </joint>
+
+    <!-- ROS-Industrial 'tool0' frame, all-zeros tool frame -->
+    <link name="${prefix}tool0"/>
+    <joint name="${prefix}flange-tool0" type="fixed">
+      <origin xyz="0 0 0" rpy="0 ${radians(-90)} 0"/>
+      <parent link="${prefix}flange"/>
+      <child link="${prefix}tool0"/>
+    </joint>
+
+  </xacro:macro>
+</robot>
